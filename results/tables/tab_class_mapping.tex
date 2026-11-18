@@ -1,0 +1,28 @@
+\begin{table}[!htb]
+\centering
+\caption{Class mapping of every source to the seven development classes; labels without a counterpart were kept as out-of-label probes (generated from \texttt{configs/default.yaml}).}
+\label{tab:classmapping}
+\footnotesize
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{p{3.6cm}p{8.4cm}p{4.6cm}}
+\hline
+Source & Original label $\to$ development class & Out-of-label probes \\
+\hline
+NailGroup-7 (development) & Onychomycosis $\to$ Onychomycosis; beau\_s $\to$ Beau's lines; black\_line $\to$ Black line; clubbing $\to$ Clubbing; healthy\_nail $\to$ Healthy nail; onycholysis $\to$ Onycholysis; white spot $\to$ White spot & -- \\
+Han A1 (hospital, thumbnails) & onychomycosis $\to$ Onychomycosis; onycholysis $\to$ Onycholysis; melanonychia $\to$ Black line; normalnail $\to$ Healthy nail; whitespot $\to$ White spot & naildystrophy, nodule, pincer \\
+han\_A2 & onychomycosis $\to$ Onychomycosis; onycholysis $\to$ Onycholysis; melanonychia $\to$ Black line; normalnail $\to$ Healthy nail; whitespot $\to$ White spot & naildystrophy, nodule, pincer \\
+han\_BCDE & onychomycosis $\to$ Onychomycosis & naildystrophy \\
+Han Virtual-E (web, CNN labels) & melanonychia $\to$ Black line; normalnail $\to$ Healthy nail; onycholysis $\to$ Onycholysis; onychomycosis $\to$ Onychomycosis & naildystrophy \\
+Kaggle arthitaya (web) & beau\_s line $\to$ Beau's lines; black line $\to$ Black line; clubbing $\to$ Clubbing; normal $\to$ Healthy nail; onycholysis $\to$ Onycholysis; white spot $\to$ White spot & mees\_ line, terry\_s nail \\
+Kaggle arthitaya-2 (web) & beau\_s line $\to$ Beau's lines; black line $\to$ Black line; onycholysis $\to$ Onycholysis & mees\_ line, terry\_s nail \\
+Kaggle nuttidalapthanachai (web) & beau's line $\to$ Beau's lines; black line $\to$ Black line; clubbing $\to$ Clubbing; onycholysis $\to$ Onycholysis; white spot $\to$ White spot & muehrck-e's lines, terry's nail \\
+Kaggle josephrasanjana & healthy $\to$ Healthy nail; onychomycosis $\to$ Onychomycosis & psoriasis \\
+Kaggle nikhilgurav21 (KNM) & Healthy\_Nail $\to$ Healthy nail; clubbing $\to$ Clubbing & Acral\_Lentiginous\_Melanoma, Onychogryphosis, blue\_finger, pitting \\
+Kaggle 17-class & beau\_s lines $\to$ Beau's lines; clubbing $\to$ Clubbing; onycholycis $\to$ Onycholysis; leukonychia $\to$ White spot & Darier\_s disease, Muehrck-e\_s lines, aloperia areata, bluish nail, eczema, half and half nailes (Lindsay\_s nails), koilonychia, pale nail, red lunula, splinter hemmorrage, terry\_s nail, white nail, yellow nails \\
+Kaggle nail-melanoma-350 & Healthy $\to$ Healthy nail & NailMelanoma \\
+Kaggle isratjahanmitu & Onychomycosis $\to$ Onychomycosis & -- \\
+Combined Roboflow/KNM set (CMB) & Onychomycosis $\to$ Onychomycosis; beau\_s $\to$ Beau's lines; black\_line $\to$ Black line; clubbing $\to$ Clubbing; healthy\_nail $\to$ Healthy nail; onycholysis $\to$ Onycholysis; white spot $\to$ White spot & -- \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\end{table}

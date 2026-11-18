@@ -1,5 +1,6 @@
 """SI tables that are not produced by s13: full class mapping per source (from configs/default.yaml) and the software/hardware
-environment (installed package versions). Output: manuscript/v2/generated/tables/tab_class_mapping.tex, tab_software.tex"""
+environment (installed package versions). Output: results/tables/tab_class_mapping.tex, tab_software.tex
+(written into the SI by tools/inline_tables.py)"""
 import platform
 import subprocess
 import sys
@@ -11,7 +12,7 @@ sys.path.insert(0, str(R / "src"))
 from nailrev.config import load_config  # noqa: E402
 
 cfg = load_config()
-out = R / "manuscript" / "v2" / "generated" / "tables"
+out = R / "results" / "tables"
 out.mkdir(parents=True, exist_ok=True)
 esc = lambda s: str(s).replace("_", r"\_").replace("&", r"\&").replace("%", r"\%")  # noqa: E731
 names = cfg.display_names
