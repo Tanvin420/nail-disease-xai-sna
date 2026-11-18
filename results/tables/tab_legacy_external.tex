@@ -1,0 +1,21 @@
+\begin{table}[!tbp]
+\centering
+\caption{Combined external test set (CMB: Roboflow mohit-fc0fl and Kaggle nikhilgurav21, 2,272 images): accuracy of the group-disjoint models by origin and by whether an image duplicates a development image; last column: models trained with an image-level random split.}
+\label{tab:legacy}
+\footnotesize
+\begin{tabular}{lcccccccc}
+\hline
+Origin & Subset & n & VGG-16 & DenseNet-121 & EfficientNet-B2 & MobileNetV3-Large & ViT-B/16 & Image-level-split models (mean) \\
+\hline
+all sources & all & 2272 & 0.735 & 0.760 & 0.827 & 0.795 & 0.867 & 0.812 \\
+all sources & duplicated in dev & 824 & 0.925 & 0.939 & 0.943 & 0.943 & 0.959 & 0.979 \\
+all sources & not duplicated & 1448 & 0.626 & 0.658 & 0.761 & 0.712 & 0.815 & 0.716 \\
+Kaggle nikhilgurav21 & all & 1151 & 0.633 & 0.654 & 0.779 & 0.717 & 0.880 & 0.742 \\
+Kaggle nikhilgurav21 & duplicated in dev & 335 & 0.929 & 0.944 & 0.957 & 0.954 & 0.960 & 0.998 \\
+Kaggle nikhilgurav21 & not duplicated & 816 & 0.512 & 0.535 & 0.706 & 0.620 & 0.847 & 0.637 \\
+Roboflow mohit-fc0fl & all & 1121 & 0.839 & 0.868 & 0.876 & 0.876 & 0.854 & 0.883 \\
+Roboflow mohit-fc0fl & duplicated in dev & 489 & 0.923 & 0.935 & 0.933 & 0.935 & 0.959 & 0.966 \\
+Roboflow mohit-fc0fl & not duplicated & 632 & 0.774 & 0.816 & 0.831 & 0.830 & 0.773 & 0.819 \\
+\hline
+\end{tabular}
+\end{table}

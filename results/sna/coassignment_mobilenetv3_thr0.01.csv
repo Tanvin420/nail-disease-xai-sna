@@ -1,0 +1,8 @@
+,beau_s,black_line,clubbing,healthy_nail,onychomycosis,onycholysis,white_spot
+beau_s,1.0,0.324,0.517,0.41,0.867,0.671,0.63
+black_line,0.324,1.0,0.751,0.83,0.349,0.211,0.27
+clubbing,0.517,0.751,1.0,0.827,0.447,0.21,0.271
+healthy_nail,0.41,0.83,0.827,1.0,0.338,0.192,0.255
+onychomycosis,0.867,0.349,0.447,0.338,1.0,0.673,0.61
+onycholysis,0.671,0.211,0.21,0.192,0.673,1.0,0.937
+white_spot,0.63,0.27,0.271,0.255,0.61,0.937,1.0

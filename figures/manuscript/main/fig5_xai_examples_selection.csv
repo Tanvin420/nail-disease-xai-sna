@@ -1,0 +1,15 @@
+row,kind,model,image_id,pred,p
+beau_s,correct,efficientnet_b2,kopin_bcc6c2330ce2,beau_s,0.7775770263341794
+beau_s,misclassified,efficientnet_b2,kopin_4ead6405e03b,onycholysis,0.8300399966085246
+black_line,correct,efficientnet_b2,kopin_f4ad1f84ebca,black_line,0.9296682745233912
+black_line,misclassified,efficientnet_b2,kopin_a3145384d326,healthy_nail,0.3779373604941414
+clubbing,correct,efficientnet_b2,kopin_fcd304bf8fe6,clubbing,0.9271998612299823
+clubbing,misclassified,efficientnet_b2,kopin_5409fff05098,onychomycosis,0.7109190037068007
+healthy_nail,correct,efficientnet_b2,kopin_4c4d8f4f8312,healthy_nail,0.9316738656744086
+healthy_nail,misclassified,vit_b16,kopin_4ad8f5e5573b,clubbing,0.9007050812375399
+onychomycosis,correct,efficientnet_b2,kopin_721dee15fa37,onychomycosis,0.9403534569610873
+onychomycosis,misclassified,efficientnet_b2,kopin_7a4c55f536ea,onycholysis,0.6421188110909074
+onycholysis,correct,efficientnet_b2,kopin_42c21e93465d,onycholysis,0.9293078177484928
+onycholysis,misclassified,efficientnet_b2,kopin_5a373e0d19ac,onychomycosis,0.7888818253660003
+white_spot,correct,efficientnet_b2,kopin_059b6e998479,white_spot,0.9411111842032666
+white_spot,misclassified,efficientnet_b2,kopin_bf962cbe1697,onycholysis,0.9246558812466867

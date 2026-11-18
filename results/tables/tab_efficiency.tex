@@ -1,0 +1,17 @@
+\begin{table}[!tbp]
+\centering
+\caption{Model size, computation and inference latency (median and IQR over five repeats) on the GPU and on the CPU (ONNX Runtime, 1 thread / all 16 threads).}
+\label{tab:efficiency}
+\footnotesize
+\begin{tabular}{lcccccccc}
+\hline
+Model & Params (M) & GFLOPs & GPU fp32 b1 (ms) & GPU bf16 b1 (ms) & GPU bf16 b32 (img/s) & Peak mem. b32 (MB) & CPU fp32 1 thr / all (ms) & CPU int8 1 thr / all (ms) \\
+\hline
+VGG-16 & 134.3 & 30.93 & 4.88 (0.06) & 1.11 (0.00) & 4038 & 1708 & 102.4 / 17.2 & 102.1 / 17.5 \\
+DenseNet-121 & 7.0 & 5.67 & 3.63 (0.19) & 3.34 (0.02) & 6446 & 325 & 19.6 / 6.8 & 19.6 / 7.1 \\
+EfficientNet-B2 & 7.7 & 1.72 & 2.28 (0.02) & 2.78 (0.02) & 8802 & 702 & 9.5 / 5.3 & 9.4 / 5.2 \\
+MobileNetV3-Large & 4.2 & 0.43 & 1.22 (0.01) & 1.58 (0.01) & 20072 & 367 & 2.2 / 1.3 & 2.2 / 1.3 \\
+ViT-B/16 & 85.8 & 33.70 & 3.09 (0.27) & 1.24 (0.01) & 4019 & 503 & 122.8 / 20.9 & 43.8 / 11.8 \\
+\hline
+\end{tabular}
+\end{table}

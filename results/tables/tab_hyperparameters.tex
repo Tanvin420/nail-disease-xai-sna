@@ -1,0 +1,17 @@
+\begin{table}[!tbp]
+\centering
+\caption{Pretrained checkpoint, input size, learning rate and weight decay of each architecture; the shared settings are given in Section~\ref{sec:hyper}.}
+\label{tab:hyper}
+\footnotesize
+\begin{tabular}{llccc}
+\hline
+Model & timm checkpoint & Input & LR & Weight decay \\
+\hline
+VGG-16 & vgg16.tv\_in1k & 224 & 5e-05 & 1e-04 \\
+DenseNet-121 & densenet121.tv\_in1k & 224 & 1e-04 & 1e-04 \\
+EfficientNet-B2 & efficientnet\_b2.ra\_in1k & 256 & 2e-04 & 1e-05 \\
+MobileNetV3-Large & mobilenetv3\_large\_100.ra\_in1k & 224 & 3e-04 & 1e-05 \\
+ViT-B/16 & vit\_base\_patch16\_224.augreg2\_in21k\_ft\_in1k & 224 & 5e-05 & 5e-02 \\
+\hline
+\end{tabular}
+\end{table}

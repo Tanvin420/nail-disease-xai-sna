@@ -1,0 +1,39 @@
+analysis,factor,level,mean_cc,mean_raw,n
+A_cross_dataset,Architecture,densenet121,0.5361688710827808,0.7037810330690275,40
+A_cross_dataset,Architecture,efficientnet_b2,0.544586813970819,0.7048808440779232,40
+A_cross_dataset,Architecture,mobilenetv3,0.5290411894851653,0.6936110815736818,40
+A_cross_dataset,Architecture,vgg16,0.5032118049658175,0.6817433455457651,40
+A_cross_dataset,Architecture,vit_b16,0.6577793505814569,0.7734092958011864,40
+A_cross_dataset,Training dataset,han,0.657704871826149,0.7691704789793766,40
+A_cross_dataset,Training dataset,han_virtualE,0.724755689028343,0.8175599228408472,40
+A_cross_dataset,Training dataset,josephrasanjana,0.7203896066066938,0.8601948033033469,15
+A_cross_dataset,Training dataset,kaggle17,0.2571689660084966,0.5172328726533554,25
+A_cross_dataset,Training dataset,kopin,0.6546416875643339,0.7528550614446715,35
+A_cross_dataset,Training dataset,nikhilgurav21,0.25092949642263696,0.6254647482113184,15
+A_cross_dataset,Training dataset,thai,0.3873876336285946,0.5754055230092343,30
+A_cross_dataset,Test dataset,arthitaya,0.5516625003946828,0.702218325913296,25
+A_cross_dataset,Test dataset,arthitaya2,0.676198618577866,0.8380993092889331,15
+A_cross_dataset,Test dataset,han_A1,0.4068245700211113,0.6087962019885521,25
+A_cross_dataset,Test dataset,han_A2,0.6689001036257809,0.7992581224860936,15
+A_cross_dataset,Test dataset,han_virtualE,0.5460628235504663,0.6941989600230636,20
+A_cross_dataset,Test dataset,josephrasanjana,0.9233416824246347,0.9616708412123172,15
+A_cross_dataset,Test dataset,kaggle17,0.6833333333333333,0.8416666666666666,5
+A_cross_dataset,Test dataset,kopin,0.4631386739233806,0.6233187902002882,30
+A_cross_dataset,Test dataset,legacy2272,0.3933310290895629,0.6017058722157261,25
+A_cross_dataset,Test dataset,nikhilgurav21,0.6131936541956335,0.8065968270978168,10
+A_cross_dataset,Test dataset,nuttida,0.5763628499366457,0.7090496929448284,15
+B_external_sources,Architecture,densenet121,,0.6495947572942515,150
+B_external_sources,Architecture,efficientnet_b2,,0.6097036905046183,150
+B_external_sources,Architecture,mobilenetv3,,0.6182691003732276,150
+B_external_sources,Architecture,vgg16,,0.5476238708273982,150
+B_external_sources,Architecture,vit_b16,,0.771503705731432,150
+B_external_sources,External source,arthitaya,,0.6744000000000002,75
+B_external_sources,External source,arthitaya2,,0.64,75
+B_external_sources,External source,farisfaikar,,0.7606779661016949,75
+B_external_sources,External source,han_A1,,0.47130560524635445,75
+B_external_sources,External source,han_virtualE,,0.5659846075921203,75
+B_external_sources,External source,isratjahanmitu,,0.8110112359550562,75
+B_external_sources,External source,josephrasanjana,,0.7717401652892562,75
+B_external_sources,External source,kaggle17,,0.47111111111111126,75
+B_external_sources,External source,nikhilgurav21,,0.6031595581662623,75
+B_external_sources,External source,nuttida,,0.624,75

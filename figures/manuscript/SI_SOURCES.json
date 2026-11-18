@@ -1,0 +1,20 @@
+{
+ "figS2_dedup_calibration": "si/fig_dedup_calibration.png",
+ "figS3_learning_curves": "si/fig_learning_curves.png",
+ "figS4_confusion_matrices": "si/fig_confusion_matrices.png",
+ "figS5_per_class_recall": "main/fig_per_class_recall.png",
+ "figS6_reliability": "si/fig_reliability.png",
+ "figS7_risk_coverage": "si/fig_risk_coverage.png",
+ "figS8_cross_dataset_strict": "main/fig_cross_dataset_matrix.png",
+ "figS9_cross_dataset_restricted": "main/fig_cross_dataset_matrix_restricted.png",
+ "figS10_cross_dataset_by_model": "si/fig_cross_dataset_matrix_by_model.png",
+ "figS11_similarity_kappa": "main/fig_similarity_error_consistency_kappa.png",
+ "figS12_similarity_pearson": "si/fig_similarity_pearson_confusion.png",
+ "figS13_accuracy_efficiency_tradeoff": "si/fig_accuracy_efficiency_tradeoff.png",
+ "figS14_xai_vgg16": "si/xai_vgg16.png",
+ "figS15_xai_densenet121": "si/xai_densenet121.png",
+ "figS16_xai_efficientnet_b2": "si/xai_efficientnet_b2.png",
+ "figS17_xai_mobilenetv3": "si/xai_mobilenetv3.png",
+ "figS18_xai_vit_b16": "si/xai_vit_b16.png",
+ "figS19_xai_all_models": "main/xai_gradcam_all_models.png"
+}

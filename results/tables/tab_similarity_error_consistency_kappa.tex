@@ -1,0 +1,17 @@
+\begin{table}[!tbp]
+\centering
+\caption{Complete pairwise model-similarity matrix (error consistency kappa; mean over the three repeats, identical test images; SDs in results/sna).}
+\label{tab:sim_error_consistency_kappa}
+\footnotesize
+\begin{tabular}{lccccc}
+\hline
+Model & VGG-16 & DenseNet-121 & EfficientNet-B2 & MobileNetV3-Large & ViT-B/16 \\
+\hline
+VGG-16 & 1.000 & 0.511 & 0.512 & 0.557 & 0.410 \\
+DenseNet-121 & 0.511 & 1.000 & 0.504 & 0.528 & 0.403 \\
+EfficientNet-B2 & 0.512 & 0.504 & 1.000 & 0.612 & 0.411 \\
+MobileNetV3-Large & 0.557 & 0.528 & 0.612 & 1.000 & 0.414 \\
+ViT-B/16 & 0.410 & 0.403 & 0.411 & 0.414 & 1.000 \\
+\hline
+\end{tabular}
+\end{table}

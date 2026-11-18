@@ -1,0 +1,17 @@
+\begin{table}[!tbp]
+\centering
+\caption{Confusion networks per architecture: edges with a rate of at least 0.01, density, top error sink with its bootstrap frequency, and stability of node ranks (Kendall's $\tau$) and communities (adjusted Rand index) over 1,000 bootstrap resamples.}
+\label{tab:sna}
+\footnotesize
+\begin{tabular}{lccccc}
+\hline
+Model & Edges & Density & Top sink (bootstrap freq.) & Kendall tau (median) & Community ARI (median) \\
+\hline
+VGG-16 & 26 & 0.62 & Onycholysis (0.94) & 0.71 & 0.05 \\
+DenseNet-121 & 24 & 0.57 & Onycholysis (0.77) & 0.81 & 0.05 \\
+EfficientNet-B2 & 24 & 0.57 & Onycholysis (0.88) & 0.81 & 0.42 \\
+MobileNetV3-Large & 24 & 0.57 & Onycholysis (0.86) & 0.81 & 0.42 \\
+ViT-B/16 & 21 & 0.50 & White spot (0.71) & 0.71 & 0.43 \\
+\hline
+\end{tabular}
+\end{table}

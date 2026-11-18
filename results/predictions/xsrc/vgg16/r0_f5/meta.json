@@ -1,0 +1,55 @@
+{
+  "model": "vgg16",
+  "timm": "vgg16.tv_in1k",
+  "size": 224,
+  "lr": 5e-05,
+  "wd": 0.0001,
+  "seed": 2031,
+  "best_epoch": 12,
+  "epochs_run": 18,
+  "fixed_epochs": null,
+  "lr_mult": 1.0,
+  "n_train_images": 135,
+  "n_train_components": 98,
+  "steps_per_epoch": 6,
+  "n_eval": {
+    "val": 15,
+    "test": 29,
+    "x_arthitaya": 287,
+    "x_arthitaya2": 143,
+    "x_farisfaikar": 126,
+    "x_han_A1": 18645,
+    "x_han_A2": 1414,
+    "x_han_BCDE": 747,
+    "x_han_virtualE": 1173,
+    "x_isratjahanmitu": 519,
+    "x_josephrasanjana": 568,
+    "x_kopin": 2414,
+    "x_legacy2272": 1351,
+    "x_nikhilgurav21": 787,
+    "x_nuttida": 267
+  },
+  "train_seconds": 18.1,
+  "mean": [
+    0.485,
+    0.456,
+    0.406
+  ],
+  "std": [
+    0.229,
+    0.224,
+    0.225
+  ],
+  "classes": [
+    "beau_s",
+    "black_line",
+    "clubbing",
+    "healthy_nail",
+    "onychomycosis",
+    "onycholysis",
+    "white_spot"
+  ],
+  "cache_size": 288,
+  "checkpoint": "best.pt",
+  "train_set": "kaggle17"
+}

@@ -1,0 +1,55 @@
+{
+  "model": "efficientnet_b2",
+  "timm": "efficientnet_b2.ra_in1k",
+  "size": 256,
+  "lr": 0.0002,
+  "wd": 1e-05,
+  "seed": 2032,
+  "best_epoch": 4,
+  "epochs_run": 10,
+  "fixed_epochs": null,
+  "lr_mult": 1.0,
+  "n_train_images": 713,
+  "n_train_components": 398,
+  "steps_per_epoch": 24,
+  "n_eval": {
+    "val": 57,
+    "test": 114,
+    "x_arthitaya": 302,
+    "x_arthitaya2": 155,
+    "x_farisfaikar": 122,
+    "x_han_A1": 18640,
+    "x_han_A2": 1414,
+    "x_han_BCDE": 747,
+    "x_han_virtualE": 1155,
+    "x_isratjahanmitu": 515,
+    "x_kaggle17": 141,
+    "x_kopin": 2342,
+    "x_legacy2272": 891,
+    "x_nikhilgurav21": 795,
+    "x_nuttida": 391
+  },
+  "train_seconds": 27.7,
+  "mean": [
+    0.485,
+    0.456,
+    0.406
+  ],
+  "std": [
+    0.229,
+    0.224,
+    0.225
+  ],
+  "classes": [
+    "beau_s",
+    "black_line",
+    "clubbing",
+    "healthy_nail",
+    "onychomycosis",
+    "onycholysis",
+    "white_spot"
+  ],
+  "cache_size": 288,
+  "checkpoint": "best.pt",
+  "train_set": "josephrasanjana"
+}

@@ -1,0 +1,48 @@
+{
+  "model": "vit_b16",
+  "timm": "vit_base_patch16_224.augreg2_in21k_ft_in1k",
+  "size": 224,
+  "lr": 5e-05,
+  "wd": 0.05,
+  "seed": 2028,
+  "best_epoch": 2,
+  "epochs_run": 8,
+  "fixed_epochs": null,
+  "lr_mult": 1.0,
+  "n_train_images": 26464,
+  "n_train_components": 18334,
+  "steps_per_epoch": 200,
+  "n_eval": {
+    "val": 2038,
+    "ext_farisfaikar": 124,
+    "ext_han_virtualE": 1163,
+    "ext_isratjahanmitu": 52,
+    "ext_josephrasanjana": 556,
+    "ext_kopin": 1176,
+    "ext_nikhilgurav21": 795,
+    "test": 795
+  },
+  "train_seconds": 259.6,
+  "mean": [
+    0.5,
+    0.5,
+    0.5
+  ],
+  "std": [
+    0.5,
+    0.5,
+    0.5
+  ],
+  "classes": [
+    "beau_s",
+    "black_line",
+    "clubbing",
+    "healthy_nail",
+    "onychomycosis",
+    "onycholysis",
+    "white_spot"
+  ],
+  "cache_size": 288,
+  "checkpoint": "best.pt",
+  "holdout": "nikhilgurav21"
+}

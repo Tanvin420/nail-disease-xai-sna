@@ -1,0 +1,19 @@
+\begin{table}[!tbp]
+\centering
+\caption{Cross-dataset matrix summary (balanced accuracy, mean of 5 architectures): each model trained on one dataset and tested on its own held-out components and on every other dataset after removing images linked to the training dataset.}
+\label{tab:xsrcsummary}
+\footnotesize
+\begin{tabular}{llcccc}
+\hline
+Training dataset & Evidence & Own test & Mean over other datasets & Best transfer & Worst transfer \\
+\hline
+NailGroup-7 (NG7) & none & 0.897 & 0.681 & Han B-E (hospital, onychomycosis) (1.00) & Kaggle 17-class (0.40) \\
+Han A1+A2+B-E & peer\_reviewed & 0.828 & 0.512 & Kaggle isratjahanmitu (0.89) & Kaggle nikhilgurav21 (KNM) (0.14) \\
+Han Virtual-E (web, CNN labels) & weak & 0.819 & 0.548 & Han B-E (hospital, onychomycosis) (0.95) & Kaggle 17-class (0.10) \\
+Thai Kaggle & peer\_reviewed & 0.855 & 0.272 & Kaggle nail-melanoma-350 (0.60) & Han B-E (hospital, onychomycosis) (0.00) \\
+Kaggle nikhilgurav21 (KNM) & peer\_reviewed & 0.987 & 0.127 & Kaggle nail-melanoma-350 (0.38) & Han A2 (hospital, thumbnails) (0.00) \\
+Kaggle 17-class & peer\_reviewed & 0.903 & 0.136 & Kaggle nuttidalapthanachai (web) (0.37) & Kaggle nail-melanoma-350 (0.00) \\
+Kaggle josephrasanjana & weak & 0.987 & 0.367 & Han B-E (hospital, onychomycosis) (0.98) & Kaggle arthitaya-2 (web) (0.00) \\
+\hline
+\end{tabular}
+\end{table}

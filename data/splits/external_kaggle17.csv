@@ -1,0 +1,397 @@
+image_id,source,label,raw_label,is_probe,comp,n_in_comp
+kaggle17_8aa18d1e44b9,kaggle17,,Darier_s disease,1,c033513,2
+kaggle17_3106b221fd6d,kaggle17,,Darier_s disease,1,c033514,2
+kaggle17_ca0d8a283131,kaggle17,,Darier_s disease,1,c033515,2
+kaggle17_5ad1de5a8546,kaggle17,,Darier_s disease,1,c033516,2
+kaggle17_a583f1753e5c,kaggle17,,Darier_s disease,1,c033519,2
+kaggle17_3e623db5930b,kaggle17,,Darier_s disease,1,c033523,2
+kaggle17_b5b24ba4268e,kaggle17,,Darier_s disease,1,c033527,2
+kaggle17_6e6ff276edd4,kaggle17,,Darier_s disease,1,c033528,2
+kaggle17_e1521fe516a9,kaggle17,,Muehrck-e_s lines,1,c033531,2
+kaggle17_e47aece3529a,kaggle17,,Muehrck-e_s lines,1,c033532,2
+kaggle17_fe8ff2e48ae5,kaggle17,,Muehrck-e_s lines,1,c033536,2
+kaggle17_b51c81edb28b,kaggle17,,aloperia areata,1,c033537,2
+kaggle17_4f1732170446,kaggle17,,aloperia areata,1,c033539,2
+kaggle17_8ca851520193,kaggle17,,aloperia areata,1,c033540,2
+kaggle17_21201881c4a0,kaggle17,,aloperia areata,1,c033544,2
+kaggle17_1649933c9979,kaggle17,,bluish nail,1,c033558,2
+kaggle17_83d12532c00d,kaggle17,,bluish nail,1,c033559,2
+kaggle17_bc14294ec11a,kaggle17,,bluish nail,1,c033565,2
+kaggle17_42c37bd2d1e5,kaggle17,,bluish nail,1,c033567,2
+kaggle17_02d1f1fa323a,kaggle17,,bluish nail,1,c033569,2
+kaggle17_e2becc6eb1fc,kaggle17,,eczema,1,c033578,2
+kaggle17_3d917dd206b1,kaggle17,,eczema,1,c033580,2
+kaggle17_9a7349dbee00,kaggle17,,eczema,1,c033581,2
+kaggle17_a7bfebeed7ff,kaggle17,,eczema,1,c033584,2
+kaggle17_4cc4009674c7,kaggle17,,eczema,1,c033587,3
+kaggle17_8ef4d4c678bb,kaggle17,,eczema,1,c033586,5
+kaggle17_f63599b248e9,kaggle17,,half and half nailes (Lindsay_s nails),1,c033589,2
+kaggle17_e5da69207abf,kaggle17,,half and half nailes (Lindsay_s nails),1,c033590,2
+kaggle17_117129e08364,kaggle17,,half and half nailes (Lindsay_s nails),1,c033592,2
+kaggle17_aaffc38ed937,kaggle17,,half and half nailes (Lindsay_s nails),1,c033593,2
+kaggle17_b2e3e4ec9ed6,kaggle17,,half and half nailes (Lindsay_s nails),1,c033594,4
+kaggle17_dc6673cb07f2,kaggle17,,half and half nailes (Lindsay_s nails),1,c033596,2
+kaggle17_fcc205a4d6a7,kaggle17,,half and half nailes (Lindsay_s nails),1,c033598,2
+kaggle17_82952389c624,kaggle17,,half and half nailes (Lindsay_s nails),1,c033599,2
+kaggle17_7b07712ce6f5,kaggle17,,koilonychia,1,c033603,2
+kaggle17_15c0d9a4a315,kaggle17,,koilonychia,1,c033605,2
+kaggle17_c73119944863,kaggle17,,koilonychia,1,c033606,2
+kaggle17_a14605fdc1e2,kaggle17,,koilonychia,1,c033607,2
+kaggle17_b8c75685c1dc,kaggle17,onycholysis,onycholycis,0,c033612,2
+kaggle17_faf90aa83f21,kaggle17,,pale nail,1,c033622,4
+kaggle17_9af497bb80df,kaggle17,,pale nail,1,c033623,2
+kaggle17_73e633c1b44f,kaggle17,,pale nail,1,c033626,2
+kaggle17_5ac33e3b1f8f,kaggle17,,red lunula,1,c033629,2
+kaggle17_3b6fcda66478,kaggle17,,red lunula,1,c033631,2
+kaggle17_4906943dd6db,kaggle17,,red lunula,1,c033632,2
+kaggle17_b79be18fa83c,kaggle17,,red lunula,1,c033633,2
+kaggle17_b8ab75e10e01,kaggle17,,red lunula,1,c033635,2
+kaggle17_34683749b085,kaggle17,,red lunula,1,c033637,2
+kaggle17_abeb59746bf8,kaggle17,,red lunula,1,c033639,2
+kaggle17_6a0a6372f7fd,kaggle17,,red lunula,1,c033641,2
+kaggle17_0ee1be67298a,kaggle17,,splinter hemmorrage,1,c033650,2
+kaggle17_5166e08b1771,kaggle17,,terry_s nail,1,c033651,2
+kaggle17_8377178eb0c7,kaggle17,,terry_s nail,1,c033653,2
+kaggle17_714c7ffa597d,kaggle17,,terry_s nail,1,c000322,2
+kaggle17_6bac60dd9238,kaggle17,,terry_s nail,1,c033655,2
+kaggle17_a6e7fe245a73,kaggle17,,terry_s nail,1,c033656,2
+kaggle17_7f7248adf288,kaggle17,,terry_s nail,1,c033657,2
+kaggle17_d5c57b7dd01d,kaggle17,,terry_s nail,1,c033658,2
+kaggle17_52243233fbe0,kaggle17,,yellow nails,1,c033664,2
+kaggle17_8a5685e2eac5,kaggle17,,yellow nails,1,c033665,2
+kaggle17_d17656edcbc0,kaggle17,,yellow nails,1,c033666,2
+kaggle17_56b21dcedb54,kaggle17,,yellow nails,1,c033667,5
+kaggle17_bea85f65baab,kaggle17,,yellow nails,1,c033669,2
+kaggle17_2a9dfb4307cb,kaggle17,,Darier_s disease,1,c033512,2
+kaggle17_78f84c3cfea9,kaggle17,,Darier_s disease,1,c033670,1
+kaggle17_b097b3588ed5,kaggle17,,Darier_s disease,1,c033671,1
+kaggle17_59b9f543cead,kaggle17,,Darier_s disease,1,c031373,1
+kaggle17_df6769b9cb2b,kaggle17,,Darier_s disease,1,c031372,1
+kaggle17_28e31ff7b3f4,kaggle17,,Darier_s disease,1,c033672,1
+kaggle17_808f62283ecd,kaggle17,,Darier_s disease,1,c033673,1
+kaggle17_83b0aa1c673d,kaggle17,,Darier_s disease,1,c033674,1
+kaggle17_9cb9d4ba2577,kaggle17,,Darier_s disease,1,c033675,1
+kaggle17_fc430c07535c,kaggle17,,Darier_s disease,1,c033517,2
+kaggle17_bbf2cbeaafb1,kaggle17,,Darier_s disease,1,c033518,2
+kaggle17_d8df88ede82d,kaggle17,,Darier_s disease,1,c033676,1
+kaggle17_dddca98d1249,kaggle17,,Darier_s disease,1,c033677,1
+kaggle17_bd04ee3b47b2,kaggle17,,Darier_s disease,1,c033520,4
+kaggle17_f8f98950ebc3,kaggle17,,Darier_s disease,1,c033678,2
+kaggle17_ef7a2e357a1f,kaggle17,,Darier_s disease,1,c033679,1
+kaggle17_64dfc34763e5,kaggle17,,Darier_s disease,1,c033521,3
+kaggle17_b5520759fa68,kaggle17,,Darier_s disease,1,c033522,2
+kaggle17_b8033946d7bc,kaggle17,,Darier_s disease,1,c033680,1
+kaggle17_7b52d1bbfe17,kaggle17,,Darier_s disease,1,c033681,1
+kaggle17_756b26c52d38,kaggle17,,Darier_s disease,1,c033682,1
+kaggle17_f9ea7c20130b,kaggle17,,Darier_s disease,1,c033683,1
+kaggle17_e2c5da5ca451,kaggle17,,Darier_s disease,1,c033684,1
+kaggle17_d0d46cb92010,kaggle17,,Darier_s disease,1,c033685,1
+kaggle17_bb4cd9137ce3,kaggle17,,Darier_s disease,1,c033686,1
+kaggle17_3edbd546328c,kaggle17,,Darier_s disease,1,c033687,1
+kaggle17_9bd22ee34a54,kaggle17,,Darier_s disease,1,c033524,2
+kaggle17_08a98e02a673,kaggle17,,Darier_s disease,1,c033525,2
+kaggle17_f5ca2ae6352d,kaggle17,,Darier_s disease,1,c033526,2
+kaggle17_1a0bad267012,kaggle17,,Darier_s disease,1,c033688,1
+kaggle17_a1455a75d912,kaggle17,,Darier_s disease,1,c033689,1
+kaggle17_55cfb8fedfb4,kaggle17,,Darier_s disease,1,c033690,1
+kaggle17_ab7b29c43af1,kaggle17,,Darier_s disease,1,c033691,1
+kaggle17_d2835ec3b661,kaggle17,,Darier_s disease,1,c033692,1
+kaggle17_e969c2186ff9,kaggle17,,Darier_s disease,1,c033693,1
+kaggle17_d2bae4421d2f,kaggle17,,Muehrck-e_s lines,1,c033694,1
+kaggle17_8fa96ca1c233,kaggle17,,Muehrck-e_s lines,1,c033695,1
+kaggle17_51912f14e474,kaggle17,,Muehrck-e_s lines,1,c033530,2
+kaggle17_3494d9399eed,kaggle17,,Muehrck-e_s lines,1,c033696,1
+kaggle17_dcf971e3b410,kaggle17,,Muehrck-e_s lines,1,c033697,1
+kaggle17_22212f250016,kaggle17,,Muehrck-e_s lines,1,c033698,1
+kaggle17_14937478f654,kaggle17,,Muehrck-e_s lines,1,c033699,1
+kaggle17_f3217d9a786b,kaggle17,,Muehrck-e_s lines,1,c033700,2
+kaggle17_feba3d59f784,kaggle17,,Muehrck-e_s lines,1,c033529,4
+kaggle17_cdf3ebf6ec0d,kaggle17,,Muehrck-e_s lines,1,c033702,1
+kaggle17_0b5c6a7b8bd4,kaggle17,,Muehrck-e_s lines,1,c033703,1
+kaggle17_4d7bfe3673a1,kaggle17,,Muehrck-e_s lines,1,c033533,2
+kaggle17_a49b1de0dfeb,kaggle17,,Muehrck-e_s lines,1,c033534,2
+kaggle17_d4b15ad0e953,kaggle17,,Muehrck-e_s lines,1,c033535,2
+kaggle17_5603f07a2026,kaggle17,,Muehrck-e_s lines,1,c033704,1
+kaggle17_e555da156a48,kaggle17,,Muehrck-e_s lines,1,c033705,1
+kaggle17_f12be9b04eef,kaggle17,,Muehrck-e_s lines,1,c033706,1
+kaggle17_c3b46c30a0ff,kaggle17,,Muehrck-e_s lines,1,c033707,1
+kaggle17_84d14d5f02be,kaggle17,,Muehrck-e_s lines,1,c033708,1
+kaggle17_bf2b00c9b21d,kaggle17,,Muehrck-e_s lines,1,c033709,1
+kaggle17_aa08ea5897bf,kaggle17,,Muehrck-e_s lines,1,c033710,1
+kaggle17_52f228d5cb95,kaggle17,,Muehrck-e_s lines,1,c033711,1
+kaggle17_1fcc81a144fe,kaggle17,,Muehrck-e_s lines,1,c033712,1
+kaggle17_82d2f66901a1,kaggle17,,Muehrck-e_s lines,1,c033701,2
+kaggle17_b92204359283,kaggle17,,Muehrck-e_s lines,1,c033713,1
+kaggle17_60bcbeb98aa1,kaggle17,,Muehrck-e_s lines,1,c031224,1
+kaggle17_b0e1708dc0d3,kaggle17,,Muehrck-e_s lines,1,c033714,1
+kaggle17_0ea8cb98d4c2,kaggle17,,aloperia areata,1,c033715,1
+kaggle17_ac291c1c47e7,kaggle17,,aloperia areata,1,c033716,1
+kaggle17_c9b783f1dc9d,kaggle17,,aloperia areata,1,c033538,2
+kaggle17_40caf50fa35f,kaggle17,,aloperia areata,1,c033282,1
+kaggle17_da1304259ed7,kaggle17,,aloperia areata,1,c030793,1
+kaggle17_7b5bdb00c233,kaggle17,,aloperia areata,1,c030792,1
+kaggle17_3312e6822d0b,kaggle17,,aloperia areata,1,c030794,1
+kaggle17_5685b44ca851,kaggle17,,aloperia areata,1,c031036,1
+kaggle17_3393eeb02e0e,kaggle17,,aloperia areata,1,c033541,2
+kaggle17_88e278fe32c8,kaggle17,,aloperia areata,1,c033717,1
+kaggle17_1a9b94e355e4,kaggle17,,aloperia areata,1,c031138,1
+kaggle17_5cffc71a0471,kaggle17,,aloperia areata,1,c033718,1
+kaggle17_ae06dd36a9ac,kaggle17,,aloperia areata,1,c033542,2
+kaggle17_a0e943ed74f4,kaggle17,,aloperia areata,1,c031134,2
+kaggle17_9752015e4ed1,kaggle17,,aloperia areata,1,c033543,2
+kaggle17_e96ade7b7796,kaggle17,,aloperia areata,1,c031126,3
+kaggle17_1e6fed07ebbd,kaggle17,,aloperia areata,1,c031127,1
+kaggle17_4ec4b7c1e6fd,kaggle17,,aloperia areata,1,c033719,2
+kaggle17_1f46b99fbc31,kaggle17,,aloperia areata,1,c033721,2
+kaggle17_1ffc148797d5,kaggle17,,aloperia areata,1,c033722,1
+kaggle17_b0b9950ad827,kaggle17,,aloperia areata,1,c033545,2
+kaggle17_875d8dc55847,kaggle17,,aloperia areata,1,c033546,2
+kaggle17_15e74cb61db1,kaggle17,,aloperia areata,1,c033547,2
+kaggle17_b6fab99b1a62,kaggle17,,aloperia areata,1,c033723,1
+kaggle17_4d5b9685999a,kaggle17,,aloperia areata,1,c033724,1
+kaggle17_550843857f6d,kaggle17,,aloperia areata,1,c033725,1
+kaggle17_5c216a35ae37,kaggle17,,aloperia areata,1,c033726,1
+kaggle17_3e8a67cd66ba,kaggle17,,aloperia areata,1,c033728,1
+kaggle17_e55e64d73e3c,kaggle17,,aloperia areata,1,c033720,2
+kaggle17_e688f89e901b,kaggle17,,aloperia areata,1,c033729,1
+kaggle17_1ee493612be6,kaggle17,,bluish nail,1,c033749,1
+kaggle17_d47546f21547,kaggle17,,bluish nail,1,c033560,2
+kaggle17_a679431d6bd5,kaggle17,,bluish nail,1,c033561,2
+kaggle17_97ebcdb52e8b,kaggle17,,bluish nail,1,c033750,1
+kaggle17_4704e034d8d8,kaggle17,,bluish nail,1,c033751,1
+kaggle17_4330b7d87000,kaggle17,,bluish nail,1,c033752,2
+kaggle17_3ba73a1e8c40,kaggle17,,bluish nail,1,c033753,1
+kaggle17_e3ec34e249de,kaggle17,,bluish nail,1,c033754,1
+kaggle17_8d73a0c2cfc6,kaggle17,,bluish nail,1,c033755,1
+kaggle17_0b2bc998d894,kaggle17,,bluish nail,1,c033756,1
+kaggle17_d91f41f4075e,kaggle17,,bluish nail,1,c033757,1
+kaggle17_5204b6418d33,kaggle17,,bluish nail,1,c033562,2
+kaggle17_3b1e2d716ac6,kaggle17,,bluish nail,1,c033563,2
+kaggle17_95b6c2f8f4de,kaggle17,,bluish nail,1,c033564,2
+kaggle17_a8ae8d0cfe0a,kaggle17,,bluish nail,1,c033758,1
+kaggle17_c79a57a34313,kaggle17,,bluish nail,1,c033759,1
+kaggle17_a97907b7793c,kaggle17,,bluish nail,1,c033760,2
+kaggle17_a4256d1c76b7,kaggle17,,bluish nail,1,c033761,1
+kaggle17_d5871c093e76,kaggle17,,bluish nail,1,c033762,1
+kaggle17_46465631a61e,kaggle17,,bluish nail,1,c033763,1
+kaggle17_8543f4ee45f9,kaggle17,,bluish nail,1,c033764,1
+kaggle17_17470c58262f,kaggle17,,bluish nail,1,c033566,2
+kaggle17_df273737e893,kaggle17,,bluish nail,1,c033765,1
+kaggle17_90369e1516e8,kaggle17,,bluish nail,1,c033766,1
+kaggle17_a22d3edc47dd,kaggle17,,bluish nail,1,c033767,1
+kaggle17_8bc9ce76b19a,kaggle17,,bluish nail,1,c033768,1
+kaggle17_4b0bcb4db44a,kaggle17,,bluish nail,1,c033769,1
+kaggle17_db763463112f,kaggle17,,bluish nail,1,c033770,1
+kaggle17_f15e9e61cb39,kaggle17,,bluish nail,1,c033771,1
+kaggle17_b7594e3e89fc,kaggle17,,bluish nail,1,c033772,1
+kaggle17_dd893cf2d505,kaggle17,,bluish nail,1,c033773,1
+kaggle17_ded2fb507287,kaggle17,,bluish nail,1,c033568,2
+kaggle17_b08e9deabe64,kaggle17,,bluish nail,1,c033570,2
+kaggle17_0c440c31eab8,kaggle17,,bluish nail,1,c033774,1
+kaggle17_10961dd23f6f,kaggle17,,bluish nail,1,c033775,1
+kaggle17_3027d0c47260,kaggle17,,bluish nail,1,c033776,1
+kaggle17_1cb3fb54d5ec,kaggle17,,bluish nail,1,c033777,1
+kaggle17_61dfcf1d5963,kaggle17,,bluish nail,1,c033778,1
+kaggle17_c71acdc7b2f2,kaggle17,,bluish nail,1,c033779,1
+kaggle17_c6742c09c9c1,kaggle17,,bluish nail,1,c033780,1
+kaggle17_d422b4875846,kaggle17,,bluish nail,1,c033748,2
+kaggle17_d01f60e5bcea,kaggle17,,bluish nail,1,c033781,1
+kaggle17_f479d0ad536c,kaggle17,,eczema,1,c033798,1
+kaggle17_5b2c38569ddf,kaggle17,,eczema,1,c033579,2
+kaggle17_42cbe80a74db,kaggle17,,eczema,1,c033799,1
+kaggle17_644673e699cb,kaggle17,,eczema,1,c033800,1
+kaggle17_761a60b711c7,kaggle17,,eczema,1,c033801,1
+kaggle17_ea4c3073ebd0,kaggle17,,eczema,1,c031412,1
+kaggle17_bfb9631fd4e1,kaggle17,,eczema,1,c033802,1
+kaggle17_00ad35c852e2,kaggle17,,eczema,1,c033803,1
+kaggle17_101e4cef761d,kaggle17,,eczema,1,c033804,1
+kaggle17_eb8f33803234,kaggle17,,eczema,1,c033805,1
+kaggle17_da7913a43956,kaggle17,,eczema,1,c033806,2
+kaggle17_b1896de6f55a,kaggle17,,eczema,1,c033582,2
+kaggle17_42a655d367f7,kaggle17,,eczema,1,c033807,1
+kaggle17_d376485f0be8,kaggle17,,eczema,1,c033808,1
+kaggle17_b84bf57cf082,kaggle17,,eczema,1,c033809,1
+kaggle17_d789f9cbe3b0,kaggle17,,eczema,1,c033812,2
+kaggle17_bda59602219a,kaggle17,,eczema,1,c032764,1
+kaggle17_6ffe077388d4,kaggle17,,eczema,1,c033813,1
+kaggle17_2fa09ce38bbd,kaggle17,,eczema,1,c033814,1
+kaggle17_5531315e29b2,kaggle17,,eczema,1,c033583,2
+kaggle17_393ac81495f5,kaggle17,,eczema,1,c033585,2
+kaggle17_9e6e7c3f8bb6,kaggle17,,eczema,1,c033815,1
+kaggle17_c4ff7e8ffb25,kaggle17,,eczema,1,c033816,1
+kaggle17_77218fbd8b67,kaggle17,,eczema,1,c033817,1
+kaggle17_00bdcdfcdf1d,kaggle17,,eczema,1,c033810,2
+kaggle17_309b3f27b64a,kaggle17,,eczema,1,c033811,2
+kaggle17_024ba25457c6,kaggle17,,eczema,1,c033818,1
+kaggle17_2cda1a201ba2,kaggle17,,eczema,1,c033819,1
+kaggle17_1bdc0c45f6a3,kaggle17,,eczema,1,c033820,1
+kaggle17_20ce189315c5,kaggle17,,eczema,1,c033821,1
+kaggle17_3787bb1f3ed5,kaggle17,,eczema,1,c033822,1
+kaggle17_14fbe78ba09f,kaggle17,,eczema,1,c033588,2
+kaggle17_0650bd66f148,kaggle17,,half and half nailes (Lindsay_s nails),1,c033823,1
+kaggle17_341928bac14f,kaggle17,,half and half nailes (Lindsay_s nails),1,c033591,2
+kaggle17_a0b30823d92b,kaggle17,,half and half nailes (Lindsay_s nails),1,c033824,2
+kaggle17_5b8f72fa47c5,kaggle17,,half and half nailes (Lindsay_s nails),1,c033825,1
+kaggle17_900d1cb69b18,kaggle17,,half and half nailes (Lindsay_s nails),1,c033826,1
+kaggle17_f4ec44f5f7ef,kaggle17,,half and half nailes (Lindsay_s nails),1,c031786,2
+kaggle17_f273880a9f93,kaggle17,,half and half nailes (Lindsay_s nails),1,c033827,1
+kaggle17_1d1b6b73da3d,kaggle17,,half and half nailes (Lindsay_s nails),1,c033828,1
+kaggle17_408b26ecbff0,kaggle17,,half and half nailes (Lindsay_s nails),1,c033595,2
+kaggle17_5d964c435c0e,kaggle17,,half and half nailes (Lindsay_s nails),1,c033829,1
+kaggle17_26ed1a2d38d2,kaggle17,,half and half nailes (Lindsay_s nails),1,c033830,1
+kaggle17_8f80aea94fcb,kaggle17,,half and half nailes (Lindsay_s nails),1,c033831,1
+kaggle17_997ebb11b3cb,kaggle17,,half and half nailes (Lindsay_s nails),1,c033832,1
+kaggle17_03d64d90c6b4,kaggle17,,half and half nailes (Lindsay_s nails),1,c033833,1
+kaggle17_72cfd313c638,kaggle17,,half and half nailes (Lindsay_s nails),1,c033834,1
+kaggle17_28a222787607,kaggle17,,half and half nailes (Lindsay_s nails),1,c033835,1
+kaggle17_8815501771ae,kaggle17,,half and half nailes (Lindsay_s nails),1,c033597,2
+kaggle17_03bbdbfc6ceb,kaggle17,,half and half nailes (Lindsay_s nails),1,c033600,2
+kaggle17_b49f6b098ff4,kaggle17,,half and half nailes (Lindsay_s nails),1,c033836,1
+kaggle17_edfffb71c3e6,kaggle17,,half and half nailes (Lindsay_s nails),1,c033837,1
+kaggle17_934f7c67cb57,kaggle17,,half and half nailes (Lindsay_s nails),1,c033838,1
+kaggle17_454b5f119ecc,kaggle17,,half and half nailes (Lindsay_s nails),1,c033839,1
+kaggle17_f8159081e3d9,kaggle17,,half and half nailes (Lindsay_s nails),1,c033840,1
+kaggle17_60f2bf51e8ca,kaggle17,,half and half nailes (Lindsay_s nails),1,c033841,1
+kaggle17_39c30a81f3fe,kaggle17,,half and half nailes (Lindsay_s nails),1,c033842,1
+kaggle17_1736acbedb4a,kaggle17,,half and half nailes (Lindsay_s nails),1,c033843,1
+kaggle17_bb60614fa5b5,kaggle17,,koilonychia,1,c033601,2
+kaggle17_9ed88282f3e0,kaggle17,,koilonychia,1,c033844,1
+kaggle17_8f474fbd740c,kaggle17,,koilonychia,1,c033845,1
+kaggle17_68144a34e549,kaggle17,,koilonychia,1,c033602,2
+kaggle17_902c17cb383a,kaggle17,,koilonychia,1,c033846,1
+kaggle17_0a6fa4b122bc,kaggle17,,koilonychia,1,c033847,1
+kaggle17_1a4951e92afa,kaggle17,,koilonychia,1,c033848,1
+kaggle17_d64fcb9f39eb,kaggle17,,koilonychia,1,c033849,1
+kaggle17_18f8edc5e2ac,kaggle17,,koilonychia,1,c033850,1
+kaggle17_5e4b072e5b05,kaggle17,,koilonychia,1,c033851,1
+kaggle17_8d3b830390d1,kaggle17,,koilonychia,1,c031598,3
+kaggle17_ee74f6220430,kaggle17,,koilonychia,1,c033852,1
+kaggle17_6442061dd70e,kaggle17,,koilonychia,1,c033853,1
+kaggle17_7152595d0abc,kaggle17,,koilonychia,1,c033854,1
+kaggle17_172df92966ce,kaggle17,,koilonychia,1,c033604,2
+kaggle17_1f0753f1af81,kaggle17,,koilonychia,1,c033855,1
+kaggle17_d087e266d66f,kaggle17,,koilonychia,1,c033856,1
+kaggle17_2d1ee3832764,kaggle17,,koilonychia,1,c033857,1
+kaggle17_114b81eb200d,kaggle17,,koilonychia,1,c033858,1
+kaggle17_cfcf4104293f,kaggle17,,koilonychia,1,c033859,1
+kaggle17_d15e6ab0a4a4,kaggle17,,koilonychia,1,c033860,1
+kaggle17_069b46f81456,kaggle17,,koilonychia,1,c033861,1
+kaggle17_c917cfb5a9f4,kaggle17,,koilonychia,1,c033862,1
+kaggle17_6d81a7f517cc,kaggle17,,koilonychia,1,c033863,1
+kaggle17_310434881d87,kaggle17,,koilonychia,1,c033864,1
+kaggle17_8ea268e930d9,kaggle17,,koilonychia,1,c033865,1
+kaggle17_87caff87d5d2,kaggle17,,koilonychia,1,c033866,1
+kaggle17_ef760ccc6d4d,kaggle17,,koilonychia,1,c033867,1
+kaggle17_aa9d27ae2b57,kaggle17,,koilonychia,1,c033868,1
+kaggle17_75d0f2dfb27d,kaggle17,,koilonychia,1,c033869,1
+kaggle17_8c1724302c48,kaggle17,,koilonychia,1,c033870,1
+kaggle17_943105d6d95e,kaggle17,,koilonychia,1,c033871,1
+kaggle17_8448fee8821f,kaggle17,white_spot,leukonychia,0,c033608,2
+kaggle17_29455278ede9,kaggle17,white_spot,leukonychia,0,c033879,1
+kaggle17_b8a6053a826d,kaggle17,white_spot,leukonychia,0,c033609,2
+kaggle17_4bf35cc294bc,kaggle17,onycholysis,onycholycis,0,c032388,1
+kaggle17_fc322bb3dce0,kaggle17,onycholysis,onycholycis,0,c033885,1
+kaggle17_78ba24527150,kaggle17,onycholysis,onycholycis,0,c033895,1
+kaggle17_b80a8d2a7746,kaggle17,onycholysis,onycholycis,0,c033900,1
+kaggle17_3772c4aeeee3,kaggle17,onycholysis,onycholycis,0,c033908,1
+kaggle17_e1e2fd1a7912,kaggle17,onycholysis,onycholycis,0,c033909,1
+kaggle17_9db076c99527,kaggle17,,pale nail,1,c033912,1
+kaggle17_3113fd5c9b5d,kaggle17,,pale nail,1,c033913,1
+kaggle17_814b2df6bec4,kaggle17,,pale nail,1,c033914,1
+kaggle17_253f9f894390,kaggle17,,pale nail,1,c033915,1
+kaggle17_5f65bf0fd297,kaggle17,,pale nail,1,c033916,1
+kaggle17_5680d363b4a3,kaggle17,,pale nail,1,c033917,1
+kaggle17_c84ad1f36f09,kaggle17,,pale nail,1,c033918,1
+kaggle17_63f845926ef2,kaggle17,,pale nail,1,c033919,1
+kaggle17_10343ad23380,kaggle17,,pale nail,1,c033920,1
+kaggle17_c37d0873a193,kaggle17,,pale nail,1,c033921,1
+kaggle17_ffd529332046,kaggle17,,pale nail,1,c033922,1
+kaggle17_3aec4e4c3a8b,kaggle17,,pale nail,1,c033624,2
+kaggle17_78583240bf99,kaggle17,,pale nail,1,c033625,2
+kaggle17_b487904efd20,kaggle17,,pale nail,1,c033923,1
+kaggle17_571c3f4e627a,kaggle17,,pale nail,1,c033924,1
+kaggle17_ab4b85553ad6,kaggle17,,pale nail,1,c033925,1
+kaggle17_0e468f169e68,kaggle17,,pale nail,1,c033926,1
+kaggle17_d457c7492ae4,kaggle17,,pale nail,1,c033927,1
+kaggle17_79588bfae9dd,kaggle17,,pale nail,1,c033928,1
+kaggle17_7fd78c48a8c4,kaggle17,,pale nail,1,c033929,1
+kaggle17_245da1a6be24,kaggle17,,pale nail,1,c033930,1
+kaggle17_348e9db47807,kaggle17,,pale nail,1,c033931,1
+kaggle17_786fc3ef635b,kaggle17,,pale nail,1,c033932,1
+kaggle17_0ddc7f6e2620,kaggle17,,pale nail,1,c033933,1
+kaggle17_0a6ee6c594f3,kaggle17,,pale nail,1,c033934,1
+kaggle17_6a64f40408a3,kaggle17,,pale nail,1,c033935,1
+kaggle17_bbf07a5df9b9,kaggle17,,pale nail,1,c033936,1
+kaggle17_dcf938ba7db2,kaggle17,,pale nail,1,c033937,1
+kaggle17_f285b8b91ace,kaggle17,,pale nail,1,c033938,1
+kaggle17_5dd4bf9c5c5d,kaggle17,,red lunula,1,c033627,2
+kaggle17_cc20c03bc89c,kaggle17,,red lunula,1,c033628,2
+kaggle17_06391b6a079f,kaggle17,,red lunula,1,c033630,2
+kaggle17_d898b1137df2,kaggle17,,red lunula,1,c033634,2
+kaggle17_d648a79fc06d,kaggle17,,red lunula,1,c033636,2
+kaggle17_e15a00174954,kaggle17,,red lunula,1,c033638,2
+kaggle17_2fbfcb39b958,kaggle17,,red lunula,1,c033640,2
+kaggle17_d7e595157872,kaggle17,,splinter hemmorrage,1,c033945,1
+kaggle17_6fe8b5e7d7c5,kaggle17,,splinter hemmorrage,1,c033946,1
+kaggle17_558eab77fb8b,kaggle17,,splinter hemmorrage,1,c033952,1
+kaggle17_dedeef972d9e,kaggle17,,splinter hemmorrage,1,c033953,1
+kaggle17_727f7edaf754,kaggle17,,splinter hemmorrage,1,c033954,1
+kaggle17_b031c986c965,kaggle17,,splinter hemmorrage,1,c033955,1
+kaggle17_a0a57af545ca,kaggle17,,splinter hemmorrage,1,c033956,1
+kaggle17_21234fab36aa,kaggle17,,splinter hemmorrage,1,c033957,1
+kaggle17_39c6adf89a4e,kaggle17,,splinter hemmorrage,1,c033960,1
+kaggle17_45e6e5c79c36,kaggle17,,splinter hemmorrage,1,c033961,1
+kaggle17_d7dfaa7a69c8,kaggle17,,splinter hemmorrage,1,c033968,1
+kaggle17_8ba234b516ba,kaggle17,,splinter hemmorrage,1,c033971,1
+kaggle17_019784bd177e,kaggle17,,splinter hemmorrage,1,c033972,1
+kaggle17_709c6b8e722c,kaggle17,,splinter hemmorrage,1,c033974,1
+kaggle17_36d92d9b2346,kaggle17,,splinter hemmorrage,1,c033975,1
+kaggle17_57987f14eb94,kaggle17,,splinter hemmorrage,1,c033976,1
+kaggle17_34f9c56343bb,kaggle17,,splinter hemmorrage,1,c033977,1
+kaggle17_bc541e794487,kaggle17,,splinter hemmorrage,1,c033978,2
+kaggle17_046b0b7f41fc,kaggle17,,splinter hemmorrage,1,c033979,1
+kaggle17_19e174110e61,kaggle17,,terry_s nail,1,c033981,2
+kaggle17_b6fd4b14f72e,kaggle17,,terry_s nail,1,c033982,1
+kaggle17_352236cd4536,kaggle17,,terry_s nail,1,c033983,1
+kaggle17_b0e179542bdd,kaggle17,,terry_s nail,1,c033984,1
+kaggle17_4f68cfa40543,kaggle17,,terry_s nail,1,c033985,1
+kaggle17_3030b47bf00e,kaggle17,,terry_s nail,1,c033652,2
+kaggle17_2a97d710e550,kaggle17,,terry_s nail,1,c033986,1
+kaggle17_3a2148ac51d0,kaggle17,,terry_s nail,1,c033987,1
+kaggle17_39d1a73438ea,kaggle17,,terry_s nail,1,c033988,1
+kaggle17_6ff8bc72f3d7,kaggle17,,terry_s nail,1,c033989,2
+kaggle17_849011e3c382,kaggle17,,terry_s nail,1,c033654,2
+kaggle17_007e9696bcba,kaggle17,,terry_s nail,1,c033991,1
+kaggle17_afffed1bb226,kaggle17,,terry_s nail,1,c033992,1
+kaggle17_7c77152df382,kaggle17,,terry_s nail,1,c033993,1
+kaggle17_e3f7becddc16,kaggle17,,terry_s nail,1,c033994,1
+kaggle17_50815a3edecc,kaggle17,,terry_s nail,1,c033995,1
+kaggle17_6169cff399dc,kaggle17,,terry_s nail,1,c000317,1
+kaggle17_be8f4c2527bb,kaggle17,,terry_s nail,1,c033996,1
+kaggle17_281e670b3a4b,kaggle17,,terry_s nail,1,c033997,1
+kaggle17_02dd5d9ebace,kaggle17,,terry_s nail,1,c033998,1
+kaggle17_2c2704706fee,kaggle17,,terry_s nail,1,c033999,1
+kaggle17_0a12fe366b35,kaggle17,,terry_s nail,1,c034000,1
+kaggle17_f900649816b3,kaggle17,,terry_s nail,1,c034001,1
+kaggle17_911d7e91820b,kaggle17,,terry_s nail,1,c033990,2
+kaggle17_167bb50b8d5a,kaggle17,,terry_s nail,1,c034002,1
+kaggle17_a4a05059e91c,kaggle17,,terry_s nail,1,c034003,1
+kaggle17_78f07173fc09,kaggle17,,yellow nails,1,c034014,1
+kaggle17_d2632c23548d,kaggle17,,yellow nails,1,c034015,1
+kaggle17_5d2ca179803e,kaggle17,,yellow nails,1,c034016,1
+kaggle17_b406d43885fd,kaggle17,,yellow nails,1,c034017,1
+kaggle17_043819216ada,kaggle17,,yellow nails,1,c034018,1
+kaggle17_2b07acbab1f5,kaggle17,,yellow nails,1,c031995,1
+kaggle17_c05ee213aaa0,kaggle17,,yellow nails,1,c034019,1
+kaggle17_e0b4ccfbaeeb,kaggle17,,yellow nails,1,c034020,1
+kaggle17_70981255508c,kaggle17,,yellow nails,1,c034021,1
+kaggle17_b4cd0ec64e67,kaggle17,,yellow nails,1,c034022,1
+kaggle17_873337375de8,kaggle17,,yellow nails,1,c034023,1
+kaggle17_4e202fcaa604,kaggle17,,yellow nails,1,c034024,1
+kaggle17_9948cf34db80,kaggle17,,yellow nails,1,c034025,1
+kaggle17_233f40f640fe,kaggle17,,yellow nails,1,c034026,1
+kaggle17_d6255bb75daf,kaggle17,,yellow nails,1,c033668,4
+kaggle17_40eb9d66bd3a,kaggle17,,yellow nails,1,c034027,1
+kaggle17_0c44a268bdd1,kaggle17,,yellow nails,1,c034028,1
+kaggle17_9f59e6dda06e,kaggle17,,yellow nails,1,c034029,1
+kaggle17_da552997d544,kaggle17,,yellow nails,1,c034030,1

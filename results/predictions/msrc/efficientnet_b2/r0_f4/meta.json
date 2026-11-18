@@ -1,0 +1,46 @@
+{
+  "model": "efficientnet_b2",
+  "timm": "efficientnet_b2.ra_in1k",
+  "size": 256,
+  "lr": 0.0002,
+  "wd": 1e-05,
+  "seed": 2030,
+  "best_epoch": 9,
+  "epochs_run": 15,
+  "fixed_epochs": null,
+  "lr_mult": 1.0,
+  "n_train_images": 27507,
+  "n_train_components": 19050,
+  "steps_per_epoch": 200,
+  "n_eval": {
+    "val": 2117,
+    "ext_farisfaikar": 124,
+    "ext_han_virtualE": 1163,
+    "ext_isratjahanmitu": 52,
+    "ext_josephrasanjana": 556,
+    "ext_kopin": 1176
+  },
+  "train_seconds": 268.4,
+  "mean": [
+    0.485,
+    0.456,
+    0.406
+  ],
+  "std": [
+    0.229,
+    0.224,
+    0.225
+  ],
+  "classes": [
+    "beau_s",
+    "black_line",
+    "clubbing",
+    "healthy_nail",
+    "onychomycosis",
+    "onycholysis",
+    "white_spot"
+  ],
+  "cache_size": 288,
+  "checkpoint": "best.pt",
+  "holdout": "none"
+}

@@ -1,0 +1,17 @@
+\begin{table}[!tbp]
+\centering
+\caption{Calibration on the internal test before/after temperature scaling fitted on each run's validation fold (mean over 15 runs; ECE with 15 equal-width bins).}
+\label{tab:calibration}
+\footnotesize
+\begin{tabular}{lccccc}
+\hline
+Model & T & ECE pre/post & Adaptive ECE post & NLL pre/post & Brier pre/post \\
+\hline
+VGG-16 & 0.73 & 0.079 / 0.032 & 0.038 & 0.338 / 0.299 & 0.137 / 0.133 \\
+DenseNet-121 & 0.68 & 0.088 / 0.030 & 0.031 & 0.304 / 0.255 & 0.123 / 0.117 \\
+EfficientNet-B2 & 0.67 & 0.093 / 0.029 & 0.031 & 0.285 / 0.227 & 0.109 / 0.102 \\
+MobileNetV3-Large & 0.64 & 0.099 / 0.026 & 0.027 & 0.313 / 0.245 & 0.123 / 0.112 \\
+ViT-B/16 & 0.77 & 0.071 / 0.028 & 0.042 & 0.290 / 0.266 & 0.113 / 0.113 \\
+\hline
+\end{tabular}
+\end{table}

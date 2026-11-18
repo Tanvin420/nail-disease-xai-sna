@@ -1,0 +1,29 @@
+\begin{table*}[!htbp]
+\centering
+\caption{Main results of all tests (Table~\ref{tab:tests}) for each architecture; best value in bold where higher or lower is clearly better.}
+\label{tab:summary}
+\footnotesize
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.6cm}>{\raggedright\arraybackslash}p{4.0cm}>{\raggedright\arraybackslash}p{4.6cm}ccccc}
+\hline
+Test & Measure & What it tells & VGG-16 & DenseNet-121 & EfficientNet-B2 & MobileNetV3-Large & ViT-B/16 \\
+\hline
+T1 & Macro-F1, internal & accuracy on unseen pictures of NailGroup-7 (1 = perfect) & 0.882 & 0.895 & \textbf{0.913} & 0.901 & 0.911 \\
+T1 & AUROC, internal & separation of the classes, threshold-free (1 = perfect) & 0.988 & 0.991 & 0.992 & \textbf{0.993} & 0.990 \\
+T1 & Calibration error after temperature scaling (ECE) & gap between confidence and accuracy (0 = perfect) & 0.032 & 0.030 & 0.029 & \textbf{0.026} & 0.028 \\
+T2 & Macro-F1, image-level split & inflated estimate when copies of a picture reach the test set & 0.997 & 0.997 & 0.997 & 0.998 & 0.998 \\
+T3 & Macro-F1, Han A1 (hospital) & performance on independent hospital images & 0.367 & \textbf{0.420} & 0.394 & 0.388 & 0.382 \\
+T3 & AUROC, Han A1 (hospital) & class separation on independent hospital images & 0.776 & \textbf{0.825} & 0.808 & 0.815 & 0.820 \\
+T3 & Balanced accuracy, mean of the external datasets & average performance on independent datasets & 0.548 & 0.650 & 0.610 & 0.618 & \textbf{0.772} \\
+T4 & Transfer across datasets (chance-corrected) & 0 = chance, 1 = perfect; mean over all dataset pairs & 0.503 & 0.536 & 0.545 & 0.529 & \textbf{0.658} \\
+T5 & Balanced accuracy, held-out source (pooled training) & transfer after training on several sources & 0.296 & 0.313 & 0.337 & 0.339 & \textbf{0.418} \\
+T6 & Share of cross-dataset variance & how much the data or the architecture matter & \multicolumn{5}{l}{datasets 80.2\%, architecture 4.5\%, interaction 15.3\%} \\
+T7 & Change in macro-F1 with 5 epochs (points) & negative = a short fixed schedule under-trains the model & -3.1 & -2.5 & -4.5 & -4.7 & +2.6 \\
+T8 & Parameters (millions) & model size & 134.3 & 7.0 & 7.7 & \textbf{4.2} & 85.8 \\
+T8 & Latency, GPU FP32 (ms per image) & speed on a graphics card & 4.88 & 3.63 & 2.28 & \textbf{1.22} & 3.09 \\
+T8 & Latency, 1 CPU thread (ms per image) & speed on an ordinary processor & 102.4 & 19.6 & 9.5 & \textbf{2.2} & 122.8 \\
+T9 & Grad-CAM better than random maps (\% images) & how often the map points at pixels that matter & 54 & 79 & 91 & \textbf{96} & 80 \\
+T9 & Grad-CAM sanity check ($\rho$) & near 0 = the map depends on the trained model (passed) & -0.04 & 0.14 & 0.11 & 0.11 & -0.04 \\
+T10 & Top error sink (bootstrap frequency) & class that receives most errors & ONL (0.94) & ONL (0.77) & ONL (0.88) & ONL (0.86) & WSP (0.71) \\
+\hline
+\end{tabular}
+\end{table*}

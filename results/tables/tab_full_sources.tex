@@ -1,0 +1,24 @@
+\begin{table}[!tbp]
+\centering
+\caption{NG7-trained models (mean of 5 architectures, each averaged over 15 runs) evaluated on every image of every other dataset, duplicates kept. dup. = image duplicates the NailGroup-7 development set; indep. = it does not. Single-class sources report recall. Evidence = published use of the dataset.}
+\label{tab:fullsources}
+\footnotesize
+\begin{tabular}{llrcrcrc}
+\hline
+Source & Evidence & n (all) & Acc (all) & n (dup.) & Acc (dup.) & n (indep.) & Acc (indep.) \\
+\hline
+Han A1 (hospital, thumbnails) & peer\_reviewed & 28693 & 0.425 & 3207 & 0.412 & 25486 & 0.427 \\
+Han A2 (hospital, thumbnails) & peer\_reviewed & 1964 & 0.768 & 415 & 0.741 & 1549 & 0.775 \\
+Han B-E (hospital, onychomycosis) & peer\_reviewed & 780 & 0.999 & 568 & 0.999 & 212 & 0.999 \\
+Han Virtual-E (web, CNN labels) & weak & 1732 & 0.601 & 46 & 0.659 & 1686 & 0.599 \\
+Kaggle arthitaya (web) & peer\_reviewed & 360 & 0.864 & 302 & 0.879 & 58 & 0.784 \\
+Kaggle arthitaya-2 (web) & peer\_reviewed & 180 & 0.870 & 178 & 0.872 & 2 & 0.640 \\
+Kaggle nuttidalapthanachai (web) & peer\_reviewed & 500 & 0.848 & 493 & 0.855 & 7 & 0.415 \\
+Kaggle josephrasanjana & weak & 1032 & 0.878 & 400 & 0.979 & 632 & 0.814 \\
+Kaggle nikhilgurav21 (KNM) & peer\_reviewed & 1126 & 0.727 & 310 & 0.946 & 816 & 0.644 \\
+Kaggle 17-class & peer\_reviewed & 201 & 0.799 & 188 & 0.827 & 13 & 0.396 \\
+Kaggle nail-melanoma-350 & none & 293 & 0.758 & 24 & 0.741 & 269 & 0.759 \\
+Kaggle isratjahanmitu & none & 556 & 0.919 & 362 & 1.000 & 194 & 0.768 \\
+\hline
+\end{tabular}
+\end{table}

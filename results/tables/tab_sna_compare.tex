@@ -1,0 +1,16 @@
+\begin{table}[!tbp]
+\centering
+\caption{Error-network topology under the image-level random split, Roboflow's split, group-disjoint CV and domain shift (all independent external sources pooled); mean over the five architectures.}
+\label{tab:snacompare}
+\footnotesize
+\begin{tabular}{lccccc}
+\hline
+Protocol / test set & n & Accuracy & Edges (w>=0.01, mean) & Top sink (models agreeing) & Sink bootstrap freq. \\
+\hline
+cv: test & 2536 & 0.925 & 23.8 & Onycholysis (4/5) & 0.83 \\
+leaky: test & 6472 & 0.997 & 0.2 & Onychomycosis (1/5) & 0.52 \\
+vendor: test & 1827 & 0.994 & 1.0 & Onycholysis (3/5) & 0.68 \\
+cv: external pooled & 20276 & 0.451 & 33.0 & Onychomycosis (3/5) & 0.94 \\
+\hline
+\end{tabular}
+\end{table}

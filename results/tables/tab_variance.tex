@@ -1,0 +1,22 @@
+\begin{table}[!tbp]
+\centering
+\caption{Variance decomposition of transfer performance ($\eta^2$: share of the total variation). (A) Cross-dataset matrix (chance-corrected balanced accuracy on shared classes); (B) NailGroup-7 models on the external datasets (balanced accuracy of each run; residual = run-to-run variation).}
+\label{tab:variance}
+\footnotesize
+\begin{tabular}{llrrr}
+\hline
+Analysis & Source of variation & df & $\eta^2$ (\%) & $p$ \\
+\hline
+(A) Cross-dataset & Training dataset & 6 & 43.3 & $<$0.001 \\
+ & Test dataset & 10 & 21.8 & $<$0.001 \\
+ & Training $\times$ test dataset (specific pair) & 23 & 15.1 & -- \\
+ & Architecture & 4 & 4.5 & $<$0.001 \\
+ & Architecture $\times$ dataset pair & 156 & 15.3 & -- \\
+\hline
+(B) External sources & External source & 9 & 38.6 & $<$0.001 \\
+ & Architecture & 4 & 16.7 & $<$0.001 \\
+ & Architecture $\times$ external source & 36 & 15.6 & $<$0.001 \\
+ & Residual & 700 & 29.1 & -- \\
+\hline
+\end{tabular}
+\end{table}

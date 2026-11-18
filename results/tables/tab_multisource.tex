@@ -1,0 +1,37 @@
+\begin{table}[!tbp]
+\centering
+\caption{Pooled multi-source training (datasets with published use) with leave-one-source-group-out testing; NG7 = independent NailGroup-7 images (no image linked to any pooled dataset), never used for training.}
+\label{tab:multisource}
+\footnotesize
+\begin{tabular}{llcccccccc}
+\hline
+Held-out group & Model & n test & Bal. acc. (held-out) & Macro-F1 (held-out) & n NG7 & Bal. acc. (NG7) & Restr. bal. acc. (held-out) & Restr. bal. acc. (NG7) \\
+\hline
+Han A1+A2+B-E & VGG-16 & 19928 & 0.150 & 0.150 & 1176 & 0.268 & 0.369 & 0.268 \\
+Han A1+A2+B-E & DenseNet-121 & 19928 & 0.112 & 0.142 & 1176 & 0.341 & 0.360 & 0.341 \\
+Han A1+A2+B-E & EfficientNet-B2 & 19928 & 0.232 & 0.161 & 1176 & 0.272 & 0.376 & 0.272 \\
+Han A1+A2+B-E & MobileNetV3-Large & 19928 & 0.183 & 0.164 & 1176 & 0.321 & 0.387 & 0.321 \\
+Han A1+A2+B-E & ViT-B/16 & 19928 & 0.180 & 0.185 & 1176 & 0.388 & 0.407 & 0.388 \\
+Thai Kaggle & VGG-16 & 443 & 0.426 & 0.347 & 1176 & 0.323 & 0.453 & 0.323 \\
+Thai Kaggle & DenseNet-121 & 443 & 0.425 & 0.370 & 1176 & 0.393 & 0.446 & 0.393 \\
+Thai Kaggle & EfficientNet-B2 & 443 & 0.405 & 0.391 & 1176 & 0.367 & 0.479 & 0.367 \\
+Thai Kaggle & MobileNetV3-Large & 443 & 0.451 & 0.403 & 1176 & 0.390 & 0.475 & 0.390 \\
+Thai Kaggle & ViT-B/16 & 443 & 0.453 & 0.429 & 1176 & 0.416 & 0.517 & 0.416 \\
+Kaggle nikhilgurav21 (KNM) & VGG-16 & 795 & 0.109 & 0.170 & 1176 & 0.540 & 0.456 & 0.540 \\
+Kaggle nikhilgurav21 (KNM) & DenseNet-121 & 795 & 0.178 & 0.261 & 1176 & 0.621 & 0.291 & 0.621 \\
+Kaggle nikhilgurav21 (KNM) & EfficientNet-B2 & 795 & 0.145 & 0.221 & 1176 & 0.510 & 0.523 & 0.510 \\
+Kaggle nikhilgurav21 (KNM) & MobileNetV3-Large & 795 & 0.188 & 0.273 & 1176 & 0.549 & 0.576 & 0.549 \\
+Kaggle nikhilgurav21 (KNM) & ViT-B/16 & 795 & 0.408 & 0.537 & 1176 & 0.673 & 0.793 & 0.673 \\
+Kaggle 17-class & VGG-16 & 137 & 0.502 & 0.621 & 1176 & 0.356 & 0.756 & 0.356 \\
+Kaggle 17-class & DenseNet-121 & 137 & 0.538 & 0.634 & 1176 & 0.423 & 0.751 & 0.423 \\
+Kaggle 17-class & EfficientNet-B2 & 137 & 0.565 & 0.690 & 1176 & 0.428 & 0.809 & 0.428 \\
+Kaggle 17-class & MobileNetV3-Large & 137 & 0.535 & 0.607 & 1176 & 0.403 & 0.672 & 0.403 \\
+Kaggle 17-class & ViT-B/16 & 137 & 0.631 & 0.722 & 1176 & 0.522 & 0.752 & 0.522 \\
+none (all pool) & VGG-16 & -- & -- & -- & 1176 & 0.379 & -- & 0.379 \\
+none (all pool) & DenseNet-121 & -- & -- & -- & 1176 & 0.451 & -- & 0.451 \\
+none (all pool) & EfficientNet-B2 & -- & -- & -- & 1176 & 0.459 & -- & 0.459 \\
+none (all pool) & MobileNetV3-Large & -- & -- & -- & 1176 & 0.448 & -- & 0.448 \\
+none (all pool) & ViT-B/16 & -- & -- & -- & 1176 & 0.531 & -- & 0.531 \\
+\hline
+\end{tabular}
+\end{table}

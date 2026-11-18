@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "If you use this code, the results or the NailGroup-7 dataset, please cite the paper."
+title: "Interpretable Nail Disease Classification via XAI and Social Network Analysis - code and results"
+authors:
+  - family-names: Sircar
+    given-names: Arnab
+  - family-names: Tanvin
+    given-names: Jamal Uddin
+  - family-names: Islam
+    given-names: Muhammad Nazrul
+date-released: 2026-11-18
+license: MIT
+repository-code: "https://github.com/Tanvin420/nail-disease-xai-sna"
+preferred-citation:
+  type: article
+  title: "Interpretable Nail Disease Classification via XAI and Social Network Analysis"
+  authors:
+    - family-names: Sircar
+      given-names: Arnab
+    - family-names: Tanvin
+      given-names: Jamal Uddin
+    - family-names: Islam
+      given-names: Muhammad Nazrul
+  journal: "Healthcare Technology Letters"
+  notes: "Under revision (manuscript HTL-2026-05-0084)"
+references:
+  - type: dataset
+    title: "NailGroup-7: a curated 7-class nail-photograph dataset with near-duplicate groups and leakage-free cross-validation folds"
+    url: "https://www.kaggle.com/datasets/jamaluddintanvin/nailgroup-7"
+    authors:
+      - family-names: Sircar
+        given-names: Arnab
+      - family-names: Tanvin
+        given-names: Jamal Uddin
+      - family-names: Islam
+        given-names: Muhammad Nazrul

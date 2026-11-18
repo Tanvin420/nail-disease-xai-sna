@@ -1,0 +1,81 @@
+source,role,kind,n
+arthitaya,external,beau_s,60
+arthitaya,external,black_line,60
+arthitaya,external,clubbing,60
+arthitaya,external,healthy_nail,60
+arthitaya,external,onycholysis,60
+arthitaya,external,probe:mees_ line,60
+arthitaya,external,probe:terry_s nail,60
+arthitaya,external,white_spot,60
+arthitaya2,external,beau_s,60
+arthitaya2,external,black_line,60
+arthitaya2,external,onycholysis,60
+arthitaya2,external,probe:mees_ line,60
+arthitaya2,external,probe:terry_s nail,60
+farisfaikar,external,healthy_nail,293
+farisfaikar,external,probe:NailMelanoma,293
+han_A1,external,black_line,2290
+han_A1,external,healthy_nail,18116
+han_A1,external,onycholysis,2397
+han_A1,external,onychomycosis,5548
+han_A1,external,probe:naildystrophy,13417
+han_A1,external,probe:nodule,201
+han_A1,external,probe:pincer,5
+han_A1,external,white_spot,342
+han_A2,provenance,black_line,359
+han_A2,provenance,onycholysis,319
+han_A2,provenance,onychomycosis,1286
+han_A2,provenance,probe:naildystrophy,1095
+han_BCDE,provenance,onychomycosis,780
+han_BCDE,provenance,probe:naildystrophy,578
+han_virtualE,external,black_line,185
+han_virtualE,external,healthy_nail,424
+han_virtualE,external,onycholysis,363
+han_virtualE,external,onychomycosis,760
+han_virtualE,external,probe:naildystrophy,1316
+isratjahanmitu,external,onychomycosis,556
+josephrasanjana,external,healthy_nail,310
+josephrasanjana,external,onychomycosis,722
+josephrasanjana,external,probe:psoriasis,434
+kaggle17,external,beau_s,50
+kaggle17,external,clubbing,52
+kaggle17,external,onycholysis,62
+kaggle17,external,probe:Darier_s disease,64
+kaggle17,external,probe:Muehrck-e_s lines,42
+kaggle17,external,probe:aloperia areata,62
+kaggle17,external,probe:bluish nail,63
+kaggle17,external,probe:eczema,57
+kaggle17,external,probe:half and half nailes (Lindsay_s nails),53
+kaggle17,external,probe:koilonychia,45
+kaggle17,external,probe:pale nail,43
+kaggle17,external,probe:red lunula,30
+kaggle17,external,probe:splinter hemmorrage,72
+kaggle17,external,probe:terry_s nail,45
+kaggle17,external,probe:white nail,25
+kaggle17,external,probe:yellow nails,35
+kaggle17,external,white_spot,37
+kopin,dev,beau_s,6135
+kopin,dev,black_line,6105
+kopin,dev,clubbing,6320
+kopin,dev,healthy_nail,5972
+kopin,dev,onycholysis,6065
+kopin,dev,onychomycosis,6304
+kopin,dev,white_spot,6243
+legacy2272,legacy,beau_s,42
+legacy2272,legacy,clubbing,821
+legacy2272,legacy,healthy_nail,651
+legacy2272,legacy,onycholysis,40
+legacy2272,legacy,onychomycosis,718
+nikhilgurav21,external,clubbing,783
+nikhilgurav21,external,healthy_nail,343
+nikhilgurav21,external,probe:Acral_Lentiginous_Melanoma,753
+nikhilgurav21,external,probe:Onychogryphosis,689
+nikhilgurav21,external,probe:blue_finger,612
+nikhilgurav21,external,probe:pitting,655
+nuttida,external,beau_s,100
+nuttida,external,black_line,100
+nuttida,external,clubbing,100
+nuttida,external,onycholysis,100
+nuttida,external,probe:muehrck-e's lines,100
+nuttida,external,probe:terry's nail,100
+nuttida,external,white_spot,100

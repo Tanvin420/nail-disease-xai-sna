@@ -1,0 +1,22 @@
+\begin{table}[!tbp]
+\centering
+\caption{Paired model comparisons on the internal test (group-disjoint CV). Equivalent: the 95\% CI of the difference lies within $\pm$0.02.}
+\label{tab:pairwise}
+\footnotesize
+\begin{tabular}{lcccc}
+\hline
+Comparison & Delta macro-F1 [95\% CI] & McNemar p (Holm) & Corrected t-test p (Holm) & Equivalent \\
+\hline
+VGG-16 vs DenseNet-121 & -0.012 [-0.022, -0.002] & 0.0383 & 1 & no \\
+VGG-16 vs EfficientNet-B2 & -0.031 [-0.041, -0.021] & 7.49e-05 & 0.0939 & no \\
+VGG-16 vs MobileNetV3-Large & -0.018 [-0.028, -0.008] & 0.265 & 1 & no \\
+VGG-16 vs ViT-B/16 & -0.029 [-0.040, -0.018] & 0.0258 & 0.303 & no \\
+DenseNet-121 vs EfficientNet-B2 & -0.018 [-0.028, -0.009] & 1 & 1 & no \\
+DenseNet-121 vs MobileNetV3-Large & -0.006 [-0.015, +0.004] & 1 & 1 & yes \\
+DenseNet-121 vs ViT-B/16 & -0.016 [-0.027, -0.006] & 1 & 1 & no \\
+EfficientNet-B2 vs MobileNetV3-Large & +0.013 [+0.004, +0.021] & 0.133 & 1 & no \\
+EfficientNet-B2 vs ViT-B/16 & +0.002 [-0.009, +0.012] & 1 & 1 & yes \\
+MobileNetV3-Large vs ViT-B/16 & -0.011 [-0.021, -0.000] & 1 & 1 & no \\
+\hline
+\end{tabular}
+\end{table}

@@ -1,0 +1,11 @@
+model_a,model_b,in_full_mst,bootstrap_support
+vgg16,densenet121,0,0.108
+vgg16,efficientnet_b2,0,0.392
+vgg16,mobilenetv3,1,0.583
+vgg16,vit_b16,1,0.384
+densenet121,efficientnet_b2,0,0.374
+densenet121,mobilenetv3,1,0.599
+densenet121,vit_b16,0,0.275
+efficientnet_b2,mobilenetv3,1,0.919
+efficientnet_b2,vit_b16,0,0.171
+mobilenetv3,vit_b16,0,0.195

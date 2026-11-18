@@ -1,0 +1,17 @@
+\begin{table}[!tbp]
+\centering
+\caption{Internal performance on NailGroup-7 (group-disjoint 5-fold cross-validation repeated three times): mean $\pm$ SD over the 15 runs [95\% bootstrap CI].}
+\label{tab:internal}
+\footnotesize
+\begin{tabular}{lccccc}
+\hline
+Model & Accuracy & Balanced acc. & Macro-F1 & MCC & AUROC \\
+\hline
+VGG-16 & 0.913 $\pm$ 0.009 [0.903, 0.922] & 0.882 $\pm$ 0.019 [0.869, 0.895] & 0.882 $\pm$ 0.016 [0.870, 0.895] & 0.892 $\pm$ 0.011 [0.880, 0.903] & 0.988 \\
+DenseNet-121 & 0.922 $\pm$ 0.012 [0.914, 0.930] & 0.894 $\pm$ 0.016 [0.881, 0.906] & 0.895 $\pm$ 0.015 [0.883, 0.907] & 0.903 $\pm$ 0.015 [0.893, 0.913] & 0.991 \\
+EfficientNet-B2 & 0.934 $\pm$ 0.010 [0.926, 0.942] & 0.910 $\pm$ 0.021 [0.898, 0.921] & 0.913 $\pm$ 0.019 [0.902, 0.924] & 0.918 $\pm$ 0.013 [0.909, 0.928] & 0.992 \\
+MobileNetV3-Large & 0.925 $\pm$ 0.009 [0.916, 0.933] & 0.897 $\pm$ 0.014 [0.885, 0.909] & 0.901 $\pm$ 0.013 [0.889, 0.912] & 0.907 $\pm$ 0.011 [0.896, 0.917] & 0.993 \\
+ViT-B/16 & 0.931 $\pm$ 0.014 [0.924, 0.938] & 0.909 $\pm$ 0.020 [0.898, 0.919] & 0.911 $\pm$ 0.019 [0.902, 0.921] & 0.914 $\pm$ 0.017 [0.905, 0.924] & 0.990 \\
+\hline
+\end{tabular}
+\end{table}

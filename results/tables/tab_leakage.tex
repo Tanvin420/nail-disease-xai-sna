@@ -1,0 +1,17 @@
+\begin{table}[!tbp]
+\centering
+\caption{Macro-F1 of the same models with an image-level split, the split shipped with the export and group-disjoint cross-validation (internal test), and of the group-disjoint models on the hospital-sourced Han A1 set.}
+\label{tab:leakage}
+\footnotesize
+\begin{tabular}{lcccc}
+\hline
+Model & Image-level 70/15/15 & Roboflow split & Group-disjoint CV & Han A1 (CV models) \\
+\hline
+VGG-16 & 0.997 & 0.996 & 0.882 & 0.367 \\
+DenseNet-121 & 0.997 & 0.993 & 0.895 & 0.420 \\
+EfficientNet-B2 & 0.997 & 0.994 & 0.913 & 0.394 \\
+MobileNetV3-Large & 0.998 & 0.994 & 0.901 & 0.388 \\
+ViT-B/16 & 0.998 & 0.995 & 0.911 & 0.382 \\
+\hline
+\end{tabular}
+\end{table}

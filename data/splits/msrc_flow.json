@@ -1,0 +1,502 @@
+{
+  "pool_sources": [
+    "han_A1",
+    "han_A2",
+    "han_BCDE",
+    "arthitaya",
+    "arthitaya2",
+    "nuttida",
+    "nikhilgurav21",
+    "kaggle17"
+  ],
+  "pool_images": 33804,
+  "pool_components": 21167,
+  "conflict_components_dropped": 301,
+  "runs": {
+    "0": {
+      "train": {
+        "images": 2106,
+        "components": 1115,
+        "by_class": {
+          "beau_s": 243,
+          "black_line": 198,
+          "clubbing": 893,
+          "healthy_nail": 360,
+          "onycholysis": 251,
+          "white_spot": 161
+        }
+      },
+      "val": {
+        "images": 124,
+        "components": 124,
+        "by_class": {
+          "beau_s": 8,
+          "black_line": 8,
+          "clubbing": 52,
+          "healthy_nail": 39,
+          "onycholysis": 10,
+          "white_spot": 7
+        }
+      },
+      "test": {
+        "images": 19928,
+        "components": 19928,
+        "by_class": {
+          "black_line": 1402,
+          "healthy_nail": 12152,
+          "onycholysis": 1431,
+          "onychomycosis": 4787,
+          "white_spot": 156
+        }
+      },
+      "ext_han_A1": {
+        "images": 18623,
+        "components": 18623,
+        "by_class": {
+          "black_line": 1320,
+          "healthy_nail": 12152,
+          "onycholysis": 1381,
+          "onychomycosis": 3614,
+          "white_spot": 156
+        }
+      },
+      "ext_han_A2": {
+        "images": 1376,
+        "components": 1376,
+        "by_class": {
+          "black_line": 252,
+          "onycholysis": 189,
+          "onychomycosis": 935
+        }
+      },
+      "ext_han_BCDE": {
+        "images": 738,
+        "components": 738,
+        "by_class": {
+          "onychomycosis": 738
+        }
+      },
+      "ext_kopin": {
+        "images": 1176,
+        "components": 1176,
+        "by_class": {
+          "beau_s": 59,
+          "black_line": 185,
+          "clubbing": 56,
+          "healthy_nail": 276,
+          "onycholysis": 321,
+          "onychomycosis": 115,
+          "white_spot": 164
+        }
+      },
+      "ext_farisfaikar": {
+        "images": 124,
+        "components": 124,
+        "by_class": {
+          "healthy_nail": 124
+        }
+      },
+      "ext_han_virtualE": {
+        "images": 1163,
+        "components": 1163,
+        "by_class": {
+          "black_line": 115,
+          "healthy_nail": 321,
+          "onycholysis": 217,
+          "onychomycosis": 510
+        }
+      },
+      "ext_isratjahanmitu": {
+        "images": 52,
+        "components": 52,
+        "by_class": {
+          "onychomycosis": 52
+        }
+      },
+      "ext_josephrasanjana": {
+        "images": 556,
+        "components": 556,
+        "by_class": {
+          "healthy_nail": 203,
+          "onychomycosis": 353
+        }
+      },
+      "holdout": "han"
+    },
+    "1": {
+      "train": {
+        "images": 26419,
+        "components": 18651,
+        "by_class": {
+          "beau_s": 2,
+          "black_line": 2151,
+          "clubbing": 628,
+          "healthy_nail": 14646,
+          "onycholysis": 1975,
+          "onychomycosis": 6765,
+          "white_spot": 252
+        }
+      },
+      "val": {
+        "images": 2073,
+        "components": 2073,
+        "by_class": {
+          "black_line": 134,
+          "clubbing": 51,
+          "healthy_nail": 1258,
+          "onycholysis": 139,
+          "onychomycosis": 472,
+          "white_spot": 19
+        }
+      },
+      "test": {
+        "images": 443,
+        "components": 443,
+        "by_class": {
+          "beau_s": 83,
+          "black_line": 78,
+          "clubbing": 72,
+          "healthy_nail": 54,
+          "onycholysis": 85,
+          "white_spot": 71
+        }
+      },
+      "ext_arthitaya": {
+        "images": 303,
+        "components": 303,
+        "by_class": {
+          "beau_s": 56,
+          "black_line": 46,
+          "clubbing": 45,
+          "healthy_nail": 54,
+          "onycholysis": 51,
+          "white_spot": 51
+        }
+      },
+      "ext_arthitaya2": {
+        "images": 153,
+        "components": 153,
+        "by_class": {
+          "beau_s": 56,
+          "black_line": 46,
+          "onycholysis": 51
+        }
+      },
+      "ext_nuttida": {
+        "images": 387,
+        "components": 387,
+        "by_class": {
+          "beau_s": 82,
+          "black_line": 78,
+          "clubbing": 72,
+          "onycholysis": 84,
+          "white_spot": 71
+        }
+      },
+      "ext_kopin": {
+        "images": 1176,
+        "components": 1176,
+        "by_class": {
+          "beau_s": 59,
+          "black_line": 185,
+          "clubbing": 56,
+          "healthy_nail": 276,
+          "onycholysis": 321,
+          "onychomycosis": 115,
+          "white_spot": 164
+        }
+      },
+      "ext_farisfaikar": {
+        "images": 124,
+        "components": 124,
+        "by_class": {
+          "healthy_nail": 124
+        }
+      },
+      "ext_han_virtualE": {
+        "images": 1163,
+        "components": 1163,
+        "by_class": {
+          "black_line": 115,
+          "healthy_nail": 321,
+          "onycholysis": 217,
+          "onychomycosis": 510
+        }
+      },
+      "ext_isratjahanmitu": {
+        "images": 52,
+        "components": 52,
+        "by_class": {
+          "onychomycosis": 52
+        }
+      },
+      "ext_josephrasanjana": {
+        "images": 556,
+        "components": 556,
+        "by_class": {
+          "healthy_nail": 203,
+          "onychomycosis": 353
+        }
+      },
+      "holdout": "thai"
+    },
+    "2": {
+      "train": {
+        "images": 26464,
+        "components": 18334,
+        "by_class": {
+          "beau_s": 246,
+          "black_line": 2334,
+          "clubbing": 146,
+          "healthy_nail": 14349,
+          "onycholysis": 2215,
+          "onychomycosis": 6755,
+          "white_spot": 419
+        }
+      },
+      "val": {
+        "images": 2038,
+        "components": 2038,
+        "by_class": {
+          "beau_s": 8,
+          "black_line": 148,
+          "clubbing": 6,
+          "healthy_nail": 1221,
+          "onycholysis": 153,
+          "onychomycosis": 479,
+          "white_spot": 23
+        }
+      },
+      "test": {
+        "images": 795,
+        "components": 795,
+        "by_class": {
+          "clubbing": 462,
+          "healthy_nail": 333
+        }
+      },
+      "ext_nikhilgurav21": {
+        "images": 795,
+        "components": 795,
+        "by_class": {
+          "clubbing": 462,
+          "healthy_nail": 333
+        }
+      },
+      "ext_kopin": {
+        "images": 1176,
+        "components": 1176,
+        "by_class": {
+          "beau_s": 59,
+          "black_line": 185,
+          "clubbing": 56,
+          "healthy_nail": 276,
+          "onycholysis": 321,
+          "onychomycosis": 115,
+          "white_spot": 164
+        }
+      },
+      "ext_farisfaikar": {
+        "images": 124,
+        "components": 124,
+        "by_class": {
+          "healthy_nail": 124
+        }
+      },
+      "ext_han_virtualE": {
+        "images": 1163,
+        "components": 1163,
+        "by_class": {
+          "black_line": 115,
+          "healthy_nail": 321,
+          "onycholysis": 217,
+          "onychomycosis": 510
+        }
+      },
+      "ext_isratjahanmitu": {
+        "images": 52,
+        "components": 52,
+        "by_class": {
+          "onychomycosis": 52
+        }
+      },
+      "ext_josephrasanjana": {
+        "images": 556,
+        "components": 556,
+        "by_class": {
+          "healthy_nail": 203,
+          "onychomycosis": 353
+        }
+      },
+      "holdout": "nikhilgurav21"
+    },
+    "3": {
+      "train": {
+        "images": 27062,
+        "components": 18927,
+        "by_class": {
+          "beau_s": 137,
+          "black_line": 2355,
+          "clubbing": 737,
+          "healthy_nail": 14678,
+          "onycholysis": 2107,
+          "onychomycosis": 6723,
+          "white_spot": 325
+        }
+      },
+      "val": {
+        "images": 2103,
+        "components": 2103,
+        "by_class": {
+          "beau_s": 5,
+          "black_line": 148,
+          "clubbing": 49,
+          "healthy_nail": 1254,
+          "onycholysis": 148,
+          "onychomycosis": 479,
+          "white_spot": 20
+        }
+      },
+      "test": {
+        "images": 137,
+        "components": 137,
+        "by_class": {
+          "beau_s": 34,
+          "clubbing": 31,
+          "onycholysis": 48,
+          "white_spot": 24
+        }
+      },
+      "ext_kaggle17": {
+        "images": 137,
+        "components": 137,
+        "by_class": {
+          "beau_s": 34,
+          "clubbing": 31,
+          "onycholysis": 48,
+          "white_spot": 24
+        }
+      },
+      "ext_kopin": {
+        "images": 1176,
+        "components": 1176,
+        "by_class": {
+          "beau_s": 59,
+          "black_line": 185,
+          "clubbing": 56,
+          "healthy_nail": 276,
+          "onycholysis": 321,
+          "onychomycosis": 115,
+          "white_spot": 164
+        }
+      },
+      "ext_farisfaikar": {
+        "images": 124,
+        "components": 124,
+        "by_class": {
+          "healthy_nail": 124
+        }
+      },
+      "ext_han_virtualE": {
+        "images": 1163,
+        "components": 1163,
+        "by_class": {
+          "black_line": 115,
+          "healthy_nail": 321,
+          "onycholysis": 217,
+          "onychomycosis": 510
+        }
+      },
+      "ext_isratjahanmitu": {
+        "images": 52,
+        "components": 52,
+        "by_class": {
+          "onychomycosis": 52
+        }
+      },
+      "ext_josephrasanjana": {
+        "images": 556,
+        "components": 556,
+        "by_class": {
+          "healthy_nail": 203,
+          "onychomycosis": 353
+        }
+      },
+      "holdout": "kaggle17"
+    },
+    "4": {
+      "train": {
+        "images": 27507,
+        "components": 19050,
+        "by_class": {
+          "beau_s": 242,
+          "black_line": 2333,
+          "clubbing": 882,
+          "healthy_nail": 14638,
+          "onycholysis": 2203,
+          "onychomycosis": 6800,
+          "white_spot": 409
+        }
+      },
+      "val": {
+        "images": 2117,
+        "components": 2117,
+        "by_class": {
+          "beau_s": 8,
+          "black_line": 148,
+          "clubbing": 52,
+          "healthy_nail": 1254,
+          "onycholysis": 153,
+          "onychomycosis": 479,
+          "white_spot": 23
+        }
+      },
+      "ext_kopin": {
+        "images": 1176,
+        "components": 1176,
+        "by_class": {
+          "beau_s": 59,
+          "black_line": 185,
+          "clubbing": 56,
+          "healthy_nail": 276,
+          "onycholysis": 321,
+          "onychomycosis": 115,
+          "white_spot": 164
+        }
+      },
+      "ext_farisfaikar": {
+        "images": 124,
+        "components": 124,
+        "by_class": {
+          "healthy_nail": 124
+        }
+      },
+      "ext_han_virtualE": {
+        "images": 1163,
+        "components": 1163,
+        "by_class": {
+          "black_line": 115,
+          "healthy_nail": 321,
+          "onycholysis": 217,
+          "onychomycosis": 510
+        }
+      },
+      "ext_isratjahanmitu": {
+        "images": 52,
+        "components": 52,
+        "by_class": {
+          "onychomycosis": 52
+        }
+      },
+      "ext_josephrasanjana": {
+        "images": 556,
+        "components": 556,
+        "by_class": {
+          "healthy_nail": 203,
+          "onychomycosis": 353
+        }
+      },
+      "holdout": "none"
+    }
+  }
+}

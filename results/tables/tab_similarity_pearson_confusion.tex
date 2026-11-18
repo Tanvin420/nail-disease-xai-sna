@@ -1,0 +1,17 @@
+\begin{table}[!tbp]
+\centering
+\caption{Complete pairwise model-similarity matrix (pearson confusion; mean over the three repeats, identical test images; SDs in results/sna).}
+\label{tab:sim_pearson_confusion}
+\footnotesize
+\begin{tabular}{lccccc}
+\hline
+Model & VGG-16 & DenseNet-121 & EfficientNet-B2 & MobileNetV3-Large & ViT-B/16 \\
+\hline
+VGG-16 & 1.000 & 0.812 & 0.858 & 0.864 & 0.806 \\
+DenseNet-121 & 0.812 & 1.000 & 0.857 & 0.871 & 0.799 \\
+EfficientNet-B2 & 0.858 & 0.857 & 1.000 & 0.902 & 0.798 \\
+MobileNetV3-Large & 0.864 & 0.871 & 0.902 & 1.000 & 0.798 \\
+ViT-B/16 & 0.806 & 0.799 & 0.798 & 0.798 & 1.000 \\
+\hline
+\end{tabular}
+\end{table}

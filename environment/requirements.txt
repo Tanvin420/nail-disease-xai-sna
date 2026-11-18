@@ -1,0 +1,25 @@
+# Python 3.12 recommended. Install PyTorch first with the CUDA 12.8+ wheels (RTX 5090 = sm_120 needs torch >= 2.7):
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu128
+# then:  pip install -r environment/requirements.txt
+timm>=1.0.15
+huggingface_hub>=0.25
+safetensors>=0.4
+numpy>=2.0
+pandas>=2.2
+pyarrow>=16
+scipy>=1.13
+scikit-learn>=1.5
+scikit-image>=0.24
+pillow>=10.4
+pyyaml>=6.0
+tqdm>=4.66
+matplotlib>=3.9
+networkx>=3.3
+statsmodels>=0.14          # s17 robustness decomposition (ANOVA)
+captum>=0.7
+grad-cam>=1.5.4
+lime>=0.2.0.1
+onnx>=1.17
+onnxscript>=0.2
+onnxruntime>=1.20
+psutil>=6.0

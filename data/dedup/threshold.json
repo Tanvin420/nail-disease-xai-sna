@@ -1,0 +1,26 @@
+{
+  "sscd_threshold": 0.75,
+  "sscd_threshold_unclipped": 0.503,
+  "phash_threshold": 2,
+  "n_synthetic": 600,
+  "n_same_stem_pairs": 5000,
+  "n_negative_pairs": 20000,
+  "recall_synthetic_sscd": 0.655,
+  "recall_synthetic_phash": 0.013333333333333334,
+  "recall_synthetic_either": 0.655,
+  "recall_same_stem_sscd": 0.6184,
+  "recall_same_stem_either": 0.6186,
+  "fpr_negative_sscd": 0.0,
+  "fpr_negative_phash": 0.0,
+  "fpr_negative_either": 0.0,
+  "synthetic_sscd_quantiles": [
+    0.5613,
+    0.6262,
+    0.8124
+  ],
+  "negative_sscd_quantiles": [
+    0.1871,
+    0.4227,
+    0.503
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "model": "mobilenetv3",
+  "timm": "mobilenetv3_large_100.ra_in1k",
+  "size": 224,
+  "lr": 0.0003,
+  "wd": 1e-05,
+  "seed": 2028,
+  "best_epoch": 14,
+  "epochs_run": 20,
+  "fixed_epochs": null,
+  "lr_mult": 1.0,
+  "n_train_images": 1189,
+  "n_train_components": 826,
+  "steps_per_epoch": 51,
+  "n_eval": {
+    "val": 118,
+    "test": 237,
+    "x_arthitaya": 297,
+    "x_arthitaya2": 147,
+    "x_farisfaikar": 127,
+    "x_han_A1": 18647,
+    "x_han_A2": 1416,
+    "x_han_BCDE": 747,
+    "x_isratjahanmitu": 518,
+    "x_josephrasanjana": 542,
+    "x_kaggle17": 134,
+    "x_kopin": 2516,
+    "x_legacy2272": 1421,
+    "x_nikhilgurav21": 792,
+    "x_nuttida": 378
+  },
+  "train_seconds": 61.7,
+  "mean": [
+    0.485,
+    0.456,
+    0.406
+  ],
+  "std": [
+    0.229,
+    0.224,
+    0.225
+  ],
+  "classes": [
+    "beau_s",
+    "black_line",
+    "clubbing",
+    "healthy_nail",
+    "onychomycosis",
+    "onycholysis",
+    "white_spot"
+  ],
+  "cache_size": 288,
+  "checkpoint": "best.pt",
+  "train_set": "han_virtualE"
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nail model on-device benchmark</title>
+<script src="https://cdn.jsdelivr.net/npm/onnxruntime-web@1.22.0/dist/ort.min.js"></script>
+<style>
+  body { font-family: system-ui, sans-serif; margin: 16px; max-width: 720px; }
+  label { display: block; margin: 4px 0; }
+  input[type=text] { width: 100%; padding: 8px; font-size: 16px; }
+  button { font-size: 16px; padding: 10px 18px; margin: 12px 0; }
+  table { border-collapse: collapse; width: 100%; font-size: 14px; }
+  td, th { border-bottom: 1px solid #ddd; padding: 4px 6px; text-align: right; }
+  td:first-child, th:first-child { text-align: left; }
+  #log { white-space: pre-wrap; font-size: 12px; color: #444; }
+</style>
+</head>
+<body>
+<h2>On-device inference benchmark</h2>
+<p>ONNX Runtime Web, WebAssembly, 1 thread, batch 1, random input. Keep the screen on and the phone plugged in;
+close other apps. Warm-up <span id="w"></span> runs, then <span id="n"></span> timed runs per model.</p>
+<label>Phone model (e.g. "Samsung Galaxy S23, Android 15"):
+  <input type="text" id="device" placeholder="manufacturer, model, OS version"></label>
+<div id="models"></div>
+<button id="run">Run selected</button>
+<table id="res"><tr><th>model</th><th>variant</th><th>load s</th><th>median ms</th><th>IQR ms</th><th>p90 ms</th></tr></table>
+<div id="log"></div>
+<script>
+const WARMUP = 5, ITERS = 30;
+document.getElementById('w').textContent = WARMUP;
+document.getElementById('n').textContent = ITERS;
+ort.env.wasm.numThreads = 1;
+const log = s => document.getElementById('log').textContent += s + '\n';
+const q = (a, p) => { const s = [...a].sort((x, y) => x - y); const i = (s.length - 1) * p, lo = Math.floor(i), hi = Math.ceil(i);
+                      return s[lo] + (s[hi] - s[lo]) * (i - lo); };
+let manifest = [];
+fetch('/models.json').then(r => r.json()).then(m => {
+  manifest = m;
+  const div = document.getElementById('models');
+  m.forEach((e, i) => {
+    const on = e.variant === 'int8' || e.mb < 120;
+    div.insertAdjacentHTML('beforeend',
+      `<label><input type="checkbox" id="m${i}" ${on ? 'checked' : ''}> ${e.label} (${e.variant}, ${e.mb} MB)</label>`);
+  });
+});
+async function bench(e) {
+  const t0 = performance.now();
+  const sess = await ort.InferenceSession.create('/onnx/' + e.file, { executionProviders: ['wasm'], graphOptimizationLevel: 'all' });
+  const load = (performance.now() - t0) / 1000;
+  const n = 3 * e.size * e.size, data = new Float32Array(n);
+  for (let i = 0; i < n; i++) data[i] = Math.random() * 2 - 1;
+  const feeds = { input: new ort.Tensor('float32', data, [1, 3, e.size, e.size]) };
+  for (let i = 0; i < WARMUP; i++) await sess.run(feeds);
+  const lat = [];
+  for (let i = 0; i < ITERS; i++) { const t = performance.now(); await sess.run(feeds); lat.push(performance.now() - t); }
+  await sess.release();
+  const mean = lat.reduce((a, b) => a + b, 0) / lat.length;
+  const sd = Math.sqrt(lat.reduce((a, b) => a + (b - mean) ** 2, 0) / (lat.length - 1));
+  return { model: e.model, label: e.label, variant: e.variant, input_size: e.size, load_s: load, latencies_ms: lat,
+           median_ms: q(lat, 0.5), iqr_ms: q(lat, 0.75) - q(lat, 0.25), p90_ms: q(lat, 0.9), p95_ms: q(lat, 0.95),
+           mean_ms: mean, sd_ms: sd, warmup: WARMUP, iters: ITERS, threads: 1, backend: 'onnxruntime-web 1.22.0 wasm',
+           device: document.getElementById('device').value, user_agent: navigator.userAgent,
+           hardware_concurrency: navigator.hardwareConcurrency, device_memory_gb: navigator.deviceMemory || null,
+           timestamp: new Date().toISOString() };
+}
+document.getElementById('run').onclick = async () => {
+  if (!document.getElementById('device').value) { alert('Please enter the phone model first.'); return; }
+  for (let i = 0; i < manifest.length; i++) {
+    if (!document.getElementById('m' + i).checked) continue;
+    const e = manifest[i];
+    log(`running ${e.label} ${e.variant} ...`);
+    try {
+      const r = await bench(e);
+      await fetch('/result', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(r) });
+      document.getElementById('res').insertAdjacentHTML('beforeend',
+        `<tr><td>${e.label}</td><td>${e.variant}</td><td>${r.load_s.toFixed(1)}</td><td>${r.median_ms.toFixed(1)}</td>` +
+        `<td>${r.iqr_ms.toFixed(1)}</td><td>${r.p90_ms.toFixed(1)}</td></tr>`);
+    } catch (err) {
+      log(`  failed: ${err}`);
+      await fetch('/result', { method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ model: e.model, variant: e.variant, error: String(err), device: document.getElementById('device').value,
+                               user_agent: navigator.userAgent }) });
+    }
+  }
+  log('done - results saved on the workstation (results/bench/phone/)');
+};
+</script>
+</body>
+</html>

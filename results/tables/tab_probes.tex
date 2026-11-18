@@ -1,0 +1,40 @@
+\begin{table}[!tbp]
+\centering
+\caption{Out-of-label-space probes: share of images assigned to each trained class (mean over models and runs) and share predicted with calibrated confidence above 0.9.}
+\label{tab:probes}
+\footnotesize
+\begin{tabular}{lccccccccc}
+\hline
+Probe (source) & n & Beau's lines & Black line & Clubbing & Healthy nail & Onychomycosis & Onycholysis & White spot & Conf.>0.9 \\
+\hline
+mees\_ line (Kaggle arthitaya (web)) & 56 & 0.27 & 0.02 & 0.41 & 0.04 & 0.00 & 0.02 & 0.24 & 0.33 \\
+terry\_s nail (Kaggle arthitaya (web)) & 52 & 0.05 & 0.01 & 0.42 & 0.17 & 0.00 & 0.05 & 0.30 & 0.42 \\
+mees\_ line (Kaggle arthitaya-2 (web)) & 56 & 0.27 & 0.02 & 0.41 & 0.04 & 0.00 & 0.02 & 0.24 & 0.32 \\
+terry\_s nail (Kaggle arthitaya-2 (web)) & 52 & 0.05 & 0.01 & 0.42 & 0.18 & 0.01 & 0.05 & 0.29 & 0.42 \\
+NailMelanoma (Kaggle nail-melanoma-350) & 144 & 0.02 & 0.80 & 0.05 & 0.01 & 0.10 & 0.01 & 0.01 & 0.69 \\
+naildystrophy (Han A1 (hospital, thumbnails)) & 8909 & 0.20 & 0.04 & 0.04 & 0.01 & 0.53 & 0.10 & 0.07 & 0.41 \\
+nodule (Han A1 (hospital, thumbnails)) & 155 & 0.12 & 0.11 & 0.03 & 0.02 & 0.61 & 0.08 & 0.03 & 0.44 \\
+pincer (Han A1 (hospital, thumbnails)) & 4 & 0.06 & 0.13 & 0.00 & 0.00 & 0.67 & 0.13 & 0.01 & 0.42 \\
+naildystrophy (Han Virtual-E (web, CNN labels)) & 857 & 0.19 & 0.04 & 0.04 & 0.01 & 0.55 & 0.11 & 0.06 & 0.46 \\
+psoriasis (Kaggle josephrasanjana) & 296 & 0.10 & 0.02 & 0.03 & 0.01 & 0.67 & 0.14 & 0.03 & 0.56 \\
+Darier\_s disease (Kaggle 17-class) & 43 & 0.22 & 0.07 & 0.18 & 0.04 & 0.23 & 0.08 & 0.18 & 0.31 \\
+Muehrck-e\_s lines (Kaggle 17-class) & 30 & 0.37 & 0.01 & 0.18 & 0.05 & 0.05 & 0.11 & 0.23 & 0.36 \\
+aloperia areata (Kaggle 17-class) & 34 & 0.20 & 0.01 & 0.15 & 0.01 & 0.18 & 0.19 & 0.27 & 0.27 \\
+bluish nail (Kaggle 17-class) & 47 & 0.10 & 0.03 & 0.34 & 0.38 & 0.00 & 0.04 & 0.11 & 0.38 \\
+eczema (Kaggle 17-class) & 38 & 0.33 & 0.00 & 0.11 & 0.15 & 0.15 & 0.16 & 0.10 & 0.41 \\
+half and half nailes (Lindsay\_s nails) (Kaggle 17-class) & 34 & 0.15 & 0.01 & 0.26 & 0.17 & 0.01 & 0.10 & 0.31 & 0.30 \\
+koilonychia (Kaggle 17-class) & 36 & 0.15 & 0.05 & 0.27 & 0.12 & 0.12 & 0.21 & 0.08 & 0.33 \\
+pale nail (Kaggle 17-class) & 32 & 0.16 & 0.02 & 0.15 & 0.18 & 0.02 & 0.06 & 0.42 & 0.34 \\
+red lunula (Kaggle 17-class) & 15 & 0.20 & 0.05 & 0.29 & 0.13 & 0.01 & 0.10 & 0.22 & 0.22 \\
+splinter hemmorrage (Kaggle 17-class) & 20 & 0.09 & 0.26 & 0.32 & 0.11 & 0.10 & 0.02 & 0.10 & 0.34 \\
+terry\_s nail (Kaggle 17-class) & 33 & 0.04 & 0.01 & 0.20 & 0.51 & 0.00 & 0.04 & 0.20 & 0.41 \\
+yellow nails (Kaggle 17-class) & 24 & 0.10 & 0.04 & 0.08 & 0.30 & 0.18 & 0.25 & 0.05 & 0.39 \\
+Acral\_Lentiginous\_Melanoma (Kaggle nikhilgurav21 (KNM)) & 188 & 0.00 & 0.95 & 0.01 & 0.02 & 0.00 & 0.00 & 0.01 & 0.89 \\
+Onychogryphosis (Kaggle nikhilgurav21 (KNM)) & 575 & 0.10 & 0.25 & 0.20 & 0.02 & 0.34 & 0.04 & 0.05 & 0.29 \\
+blue\_finger (Kaggle nikhilgurav21 (KNM)) & 497 & 0.02 & 0.20 & 0.31 & 0.25 & 0.00 & 0.00 & 0.21 & 0.46 \\
+pitting (Kaggle nikhilgurav21 (KNM)) & 30 & 0.24 & 0.11 & 0.11 & 0.17 & 0.01 & 0.06 & 0.31 & 0.30 \\
+muehrck-e's lines (Kaggle nuttidalapthanachai (web)) & 86 & 0.31 & 0.01 & 0.33 & 0.04 & 0.01 & 0.05 & 0.24 & 0.33 \\
+terry's nail (Kaggle nuttidalapthanachai (web)) & 89 & 0.09 & 0.01 & 0.34 & 0.20 & 0.00 & 0.06 & 0.29 & 0.37 \\
+\hline
+\end{tabular}
+\end{table}

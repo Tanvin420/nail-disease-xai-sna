@@ -1,0 +1,372 @@
+{
+  "links": {
+    "sscd_threshold": 0.75,
+    "phash_threshold": 2,
+    "n_pair_links": 300149,
+    "n_stem_links": 39019,
+    "n_md5_links": 7817,
+    "n_audited": 150,
+    "audit_precision_at_threshold": 1.0
+  },
+  "dev": {
+    "kopin_files": 43144,
+    "kopin_class_stem_groups": 4125,
+    "dev_components": 3150,
+    "components_spanning_vendor_splits": 2115,
+    "components_in_all_three_vendor_splits": 737,
+    "excluded_by_reason": {
+      "same_hospital_as_HanA1": 355,
+      "label_policy:nikhilgurav21:pitting": 184,
+      "label_policy:kaggle17:splinter hemmorrage": 36,
+      "label_conflict": 35,
+      "label_policy:kaggle17:aloperia areata": 4
+    },
+    "included_components": 2536,
+    "included_components_by_class": {
+      "beau_s": 142,
+      "black_line": 227,
+      "clubbing": 194,
+      "healthy_nail": 284,
+      "onycholysis": 743,
+      "onychomycosis": 645,
+      "white_spot": 301
+    },
+    "included_files_by_class": {
+      "beau_s": 1492,
+      "black_line": 5450,
+      "clubbing": 6074,
+      "healthy_nail": 5287,
+      "onycholysis": 5090,
+      "onychomycosis": 4241,
+      "white_spot": 5464
+    },
+    "flagged": {
+      "melanoma_sourced": 154
+    },
+    "largest_components": [
+      {
+        "comp": "c010676",
+        "label": "clubbing|healthy_nail|onychomycosis|white_spot",
+        "n_images": 725,
+        "n_stems": 100
+      },
+      {
+        "comp": "c008634",
+        "label": "white_spot",
+        "n_images": 319,
+        "n_stems": 28
+      },
+      {
+        "comp": "c031718",
+        "label": "clubbing",
+        "n_images": 229,
+        "n_stems": 6
+      },
+      {
+        "comp": "c006880",
+        "label": "white_spot",
+        "n_images": 215,
+        "n_stems": 17
+      },
+      {
+        "comp": "c006885",
+        "label": "white_spot",
+        "n_images": 209,
+        "n_stems": 22
+      },
+      {
+        "comp": "c000798",
+        "label": "onycholysis|onychomycosis|white_spot",
+        "n_images": 207,
+        "n_stems": 44
+      },
+      {
+        "comp": "c033571",
+        "label": "clubbing",
+        "n_images": 170,
+        "n_stems": 5
+      },
+      {
+        "comp": "c000119",
+        "label": "clubbing",
+        "n_images": 164,
+        "n_stems": 7
+      },
+      {
+        "comp": "c008632",
+        "label": "onycholysis|white_spot",
+        "n_images": 163,
+        "n_stems": 14
+      },
+      {
+        "comp": "c033793",
+        "label": "clubbing",
+        "n_images": 135,
+        "n_stems": 7
+      }
+    ]
+  },
+  "external": {
+    "han_A1": {
+      "images": 42316,
+      "linked_to_dev": 3750,
+      "linked_to_dev_by_key": {
+        "black_line": 81,
+        "healthy_nail": 1740,
+        "onycholysis": 975,
+        "onychomycosis": 233,
+        "probe:naildystrophy": 543,
+        "probe:nodule": 0,
+        "probe:pincer": 0,
+        "white_spot": 178
+      },
+      "within_source_conflict_components": 633,
+      "test_images_mapped": {
+        "black_line": 1280,
+        "healthy_nail": 11915,
+        "onycholysis": 952,
+        "onychomycosis": 3458,
+        "white_spot": 92
+      },
+      "test_images_probe": {
+        "naildystrophy": 8909,
+        "nodule": 155,
+        "pincer": 4
+      }
+    },
+    "han_virtualE": {
+      "images": 3048,
+      "linked_to_dev": 82,
+      "linked_to_dev_by_key": {
+        "black_line": 13,
+        "healthy_nail": 7,
+        "onycholysis": 14,
+        "onychomycosis": 12,
+        "probe:naildystrophy": 36
+      },
+      "within_source_conflict_components": 32,
+      "test_images_mapped": {
+        "black_line": 113,
+        "healthy_nail": 311,
+        "onycholysis": 213,
+        "onychomycosis": 497
+      },
+      "test_images_probe": {
+        "naildystrophy": 857
+      }
+    },
+    "arthitaya": {
+      "images": 480,
+      "linked_to_dev": 302,
+      "linked_to_dev_by_key": {
+        "beau_s": 59,
+        "black_line": 60,
+        "clubbing": 60,
+        "healthy_nail": 5,
+        "onycholysis": 59,
+        "probe:mees_ line": 0,
+        "probe:terry_s nail": 0,
+        "white_spot": 59
+      },
+      "within_source_conflict_components": 0,
+      "test_images_mapped": {
+        "beau_s": 1,
+        "healthy_nail": 50,
+        "onycholysis": 1,
+        "white_spot": 1
+      },
+      "test_images_probe": {
+        "mees_ line": 56,
+        "terry_s nail": 52
+      }
+    },
+    "arthitaya2": {
+      "images": 300,
+      "linked_to_dev": 178,
+      "linked_to_dev_by_key": {
+        "beau_s": 59,
+        "black_line": 60,
+        "onycholysis": 59,
+        "probe:mees_ line": 0,
+        "probe:terry_s nail": 0
+      },
+      "within_source_conflict_components": 0,
+      "test_images_mapped": {
+        "beau_s": 1,
+        "onycholysis": 1
+      },
+      "test_images_probe": {
+        "mees_ line": 56,
+        "terry_s nail": 52
+      }
+    },
+    "nuttida": {
+      "images": 700,
+      "linked_to_dev": 493,
+      "linked_to_dev_by_key": {
+        "beau_s": 99,
+        "black_line": 100,
+        "clubbing": 100,
+        "onycholysis": 95,
+        "probe:muehrck-e's lines": 0,
+        "probe:terry's nail": 0,
+        "white_spot": 99
+      },
+      "within_source_conflict_components": 0,
+      "test_images_mapped": {
+        "beau_s": 1,
+        "onycholysis": 5,
+        "white_spot": 1
+      },
+      "test_images_probe": {
+        "muehrck-e's lines": 86,
+        "terry's nail": 89
+      }
+    },
+    "josephrasanjana": {
+      "images": 1466,
+      "linked_to_dev": 414,
+      "linked_to_dev_by_key": {
+        "healthy_nail": 131,
+        "onychomycosis": 269,
+        "probe:psoriasis": 14
+      },
+      "within_source_conflict_components": 0,
+      "test_images_mapped": {
+        "healthy_nail": 125,
+        "onychomycosis": 242
+      },
+      "test_images_probe": {
+        "psoriasis": 296
+      }
+    },
+    "nikhilgurav21": {
+      "images": 3835,
+      "linked_to_dev": 1440,
+      "linked_to_dev_by_key": {
+        "clubbing": 305,
+        "healthy_nail": 5,
+        "probe:Acral_Lentiginous_Melanoma": 519,
+        "probe:Onychogryphosis": 1,
+        "probe:blue_finger": 0,
+        "probe:pitting": 610
+      },
+      "within_source_conflict_components": 0,
+      "test_images_mapped": {
+        "clubbing": 382,
+        "healthy_nail": 328
+      },
+      "test_images_probe": {
+        "Acral_Lentiginous_Melanoma": 188,
+        "Onychogryphosis": 575,
+        "blue_finger": 497,
+        "pitting": 30
+      }
+    },
+    "kaggle17": {
+      "images": 837,
+      "linked_to_dev": 272,
+      "linked_to_dev_by_key": {
+        "beau_s": 50,
+        "clubbing": 52,
+        "onycholysis": 54,
+        "probe:Darier_s disease": 0,
+        "probe:Muehrck-e_s lines": 0,
+        "probe:aloperia areata": 11,
+        "probe:bluish nail": 0,
+        "probe:eczema": 0,
+        "probe:half and half nailes (Lindsay_s nails)": 0,
+        "probe:koilonychia": 0,
+        "probe:pale nail": 0,
+        "probe:red lunula": 0,
+        "probe:splinter hemmorrage": 50,
+        "probe:terry_s nail": 0,
+        "probe:white nail": 23,
+        "probe:yellow nails": 0,
+        "white_spot": 32
+      },
+      "within_source_conflict_components": 2,
+      "test_images_mapped": {
+        "onycholysis": 7,
+        "white_spot": 3
+      },
+      "test_images_probe": {
+        "Darier_s disease": 43,
+        "Muehrck-e_s lines": 30,
+        "aloperia areata": 34,
+        "bluish nail": 47,
+        "eczema": 38,
+        "half and half nailes (Lindsay_s nails)": 34,
+        "koilonychia": 36,
+        "pale nail": 32,
+        "red lunula": 15,
+        "splinter hemmorrage": 20,
+        "terry_s nail": 33,
+        "yellow nails": 24
+      }
+    },
+    "farisfaikar": {
+      "images": 586,
+      "linked_to_dev": 53,
+      "linked_to_dev_by_key": {
+        "healthy_nail": 24,
+        "probe:NailMelanoma": 29
+      },
+      "within_source_conflict_components": 0,
+      "test_images_mapped": {
+        "healthy_nail": 118
+      },
+      "test_images_probe": {
+        "NailMelanoma": 144
+      }
+    },
+    "isratjahanmitu": {
+      "images": 556,
+      "linked_to_dev": 362,
+      "linked_to_dev_by_key": {
+        "onychomycosis": 362
+      },
+      "within_source_conflict_components": 0,
+      "test_images_mapped": {
+        "onychomycosis": 178
+      },
+      "test_images_probe": {}
+    },
+    "legacy2272": {
+      "images": 2272,
+      "linked_to_dev": 824,
+      "linked_by_class": {
+        "beau_s": {
+          "sum": 42,
+          "count": 42
+        },
+        "clubbing": {
+          "sum": 343,
+          "count": 821
+        },
+        "healthy_nail": {
+          "sum": 135,
+          "count": 651
+        },
+        "onycholysis": {
+          "sum": 35,
+          "count": 40
+        },
+        "onychomycosis": {
+          "sum": 269,
+          "count": 718
+        }
+      },
+      "by_origin": {
+        "Kaggle nikhilgurav21": {
+          "sum": 335,
+          "count": 1151
+        },
+        "Roboflow mohit-fc0fl": {
+          "sum": 489,
+          "count": 1121
+        }
+      }
+    }
+  }
+}

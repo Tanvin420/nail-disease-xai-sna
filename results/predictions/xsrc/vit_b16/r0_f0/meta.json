@@ -1,0 +1,55 @@
+{
+  "model": "vit_b16",
+  "timm": "vit_base_patch16_224.augreg2_in21k_ft_in1k",
+  "size": 224,
+  "lr": 5e-05,
+  "wd": 0.05,
+  "seed": 2026,
+  "best_epoch": 2,
+  "epochs_run": 8,
+  "fixed_epochs": null,
+  "lr_mult": 1.0,
+  "n_train_images": 22640,
+  "n_train_components": 1774,
+  "steps_per_epoch": 110,
+  "n_eval": {
+    "val": 254,
+    "test": 508,
+    "x_arthitaya": 53,
+    "x_arthitaya2": 2,
+    "x_farisfaikar": 118,
+    "x_han_A1": 18102,
+    "x_han_A2": 1162,
+    "x_han_BCDE": 210,
+    "x_han_virtualE": 1160,
+    "x_isratjahanmitu": 178,
+    "x_josephrasanjana": 367,
+    "x_kaggle17": 10,
+    "x_legacy2272": 1081,
+    "x_nikhilgurav21": 710,
+    "x_nuttida": 7
+  },
+  "train_seconds": 174.6,
+  "mean": [
+    0.5,
+    0.5,
+    0.5
+  ],
+  "std": [
+    0.5,
+    0.5,
+    0.5
+  ],
+  "classes": [
+    "beau_s",
+    "black_line",
+    "clubbing",
+    "healthy_nail",
+    "onychomycosis",
+    "onycholysis",
+    "white_spot"
+  ],
+  "cache_size": 288,
+  "checkpoint": "best.pt",
+  "train_set": "kopin"
+}

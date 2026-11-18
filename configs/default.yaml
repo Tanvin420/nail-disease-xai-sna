@@ -1,0 +1,332 @@
+# Single configuration for the whole revision pipeline.
+# Paths are relative to the HTL_Revision folder unless absolute. Override per machine in configs/local.yaml
+# (same keys, merged on top of this file; git-ignored).
+
+paths:
+  raw: data/raw              # untouched source archives (see data/raw/README.md)
+  cache: data/cache          # regenerable: standardised images + embeddings
+  manifests: data/manifests  # index.csv, raw_sources*.csv
+  dedup: data/dedup          # pairs, components, calibration, audit montages
+  splits: data/splits        # fold files, leaky split, external test lists
+  runs: runs                 # checkpoints + per-epoch logs (heavy, git-ignored)
+  results: results           # predictions, metrics, stats, xai, sna, bench, macros.tex
+  figures: figures           # generated figures (main/ and si/)
+
+seed: 2026
+
+classes: [beau_s, black_line, clubbing, healthy_nail, onychomycosis, onycholysis, white_spot]
+display_names:
+  beau_s: "Beau's lines"
+  black_line: "Black line"
+  clubbing: "Clubbing"
+  healthy_nail: "Healthy nail"
+  onychomycosis: "Onychomycosis"
+  onycholysis: "Onycholysis"
+  white_spot: "White spot"
+
+# ---------------------------------------------------------------------------------------------
+# Image standardisation (stage 01). All images are stretched to cache_size x cache_size, matching
+# the development set's own preprocessing (Roboflow "resize 640x640, stretch").
+image:
+  cache_size: 288
+  jpeg_quality: 95
+  min_side: 24               # skip images/tiles smaller than this (pixels)
+
+# ---------------------------------------------------------------------------------------------
+# Sources. kind: folder (label = name of parent folder in the zip), han_mosaic (contact sheets),
+# csv (labels from a CSV inside the zip).  role: dev | external | provenance | legacy.
+# label_map: raw label -> canonical class.  probes: raw labels kept as out-of-label-space probes.
+# Raw labels not listed in either are ignored.
+sources:
+  - id: kopin
+    display: "NailGroup-7 (development)"   # curated name of the ko-pin export (Kaggle release)
+    folder: roboflow_ko-pin_dataset-7clxx_v1
+    file: dataset.v1i.folder.zip
+    kind: folder
+    role: dev
+    vendor_split_from_path: true      # first path component = Roboflow train/valid/test
+    label_map: {Onychomycosis: onychomycosis, beau_s: beau_s, black_line: black_line, clubbing: clubbing,
+                healthy_nail: healthy_nail, onycholysis: onycholysis, "white spot": white_spot}
+
+  - id: han_A1
+    folder: han2018_figshare_5398573
+    file: A1_thumbnail.zip
+    kind: han_mosaic
+    role: external
+    display: "Han A1 (hospital, thumbnails)"
+    label_map: {onychomycosis: onychomycosis, onycholysis: onycholysis, melanonychia: black_line,
+                normalnail: healthy_nail, whitespot: white_spot}
+    probes: [naildystrophy, nodule, pincer]
+
+  - id: han_A2
+    folder: han2018_figshare_5398573
+    file: A2_thumbnail.zip
+    kind: han_mosaic
+    role: provenance                  # same hospital as A1; used to find A2-derived ko-pin groups
+    label_map: {onychomycosis: onychomycosis, onycholysis: onycholysis, melanonychia: black_line,
+                normalnail: healthy_nail, whitespot: white_spot}
+    probes: [naildystrophy, nodule, pincer]
+
+  - id: han_BCDE
+    folder: han2018_figshare_5398573
+    file: B1_B2_C_D_E.zip
+    kind: folder
+    role: provenance
+    label_map: {onychomycosis: onychomycosis}
+    probes: [naildystrophy]
+
+  - id: han_virtualE
+    folder: han2018_figshare_5513407
+    file: Virtual_E_Dataset.zip
+    kind: folder
+    role: external
+    display: "Han Virtual-E (web, CNN labels)"
+    label_map: {melanonychia: black_line, normalnail: healthy_nail, onycholysis: onycholysis,
+                onychomycosis: onychomycosis}
+    probes: [naildystrophy]
+
+  - id: arthitaya
+    folder: kaggle_arthitaya_nail-dataset
+    file: archive.zip
+    kind: folder
+    role: external
+    display: "Kaggle arthitaya (web)"
+    label_map: {"beau_s line": beau_s, "black line": black_line, clubbing: clubbing, normal: healthy_nail,
+                onycholysis: onycholysis, "white spot": white_spot}
+    probes: ["mees_ line", "terry_s nail"]
+
+  - id: arthitaya2
+    folder: kaggle_arthitaya_nail-dataset2
+    file: archive.zip
+    kind: folder
+    role: external
+    display: "Kaggle arthitaya-2 (web)"
+    label_map: {"beau_s line": beau_s, "black line": black_line, onycholysis: onycholysis}
+    probes: ["mees_ line", "terry_s nail"]
+
+  - id: nuttida
+    folder: kaggle_nuttidalapthanachai_nails-new-test
+    file: archive.zip
+    kind: folder
+    role: external
+    display: "Kaggle nuttidalapthanachai (web)"
+    label_map: {"beau's line": beau_s, "black line": black_line, clubbing: clubbing, onycholysis: onycholysis,
+                "white spot": white_spot}
+    probes: ["muehrck-e's lines", "terry's nail"]
+
+  - id: josephrasanjana
+    folder: kaggle_josephrasanjana_nail-disease-image-classification
+    file: archive.zip
+    kind: folder
+    role: external
+    display: "Kaggle josephrasanjana"
+    label_map: {healthy: healthy_nail, onychomycosis: onychomycosis}
+    probes: [psoriasis]
+
+  - id: nikhilgurav21
+    folder: kaggle_nikhilgurav21
+    file: archive.zip
+    kind: folder
+    role: external
+    display: "Kaggle nikhilgurav21 (KNM)"
+    label_map: {Healthy_Nail: healthy_nail, clubbing: clubbing}
+    probes: [Acral_Lentiginous_Melanoma, Onychogryphosis, blue_finger, pitting]
+
+  - id: kaggle17
+    folder: kaggle_17class_saisrushikgovindgari
+    file: archive2.zip
+    kind: folder
+    role: external
+    display: "Kaggle 17-class"
+    label_map: {"beau_s lines": beau_s, clubbing: clubbing, onycholycis: onycholysis, leukonychia: white_spot}
+    probes: ["Darier_s disease", "Muehrck-e_s lines", "aloperia areata", "bluish nail", "eczema",
+             "half and half nailes (Lindsay_s nails)", "koilonychia", "pale nail", "red lunula",
+             "splinter hemmorrage", "terry_s nail", "white nail", "yellow nails"]
+
+  - id: farisfaikar
+    folder: kaggle_farisfaikar_nail-melanoma-350
+    file: archive.zip
+    kind: folder
+    role: external
+    display: "Kaggle nail-melanoma-350"
+    include_regex: "/Original/"       # the Augmented/ copies are ignored
+    label_map: {Healthy: healthy_nail}
+    probes: [NailMelanoma]
+
+  - id: isratjahanmitu
+    folder: kaggle_isratjahanmitu_onychomycosis
+    file: archive.zip
+    kind: folder
+    role: external
+    display: "Kaggle isratjahanmitu"
+    label_map: {Onychomycosis: onychomycosis}
+
+  - id: legacy2272
+    folder: legacy_external_2272
+    file: nail_disease_dataset_test.zip
+    kind: csv
+    role: legacy                      # the original submission's "external" set, for the leakage audit
+    display: "Combined Roboflow/KNM set (CMB)"
+    csv_name: image_disease_labels.csv
+    csv_image_col: image_name
+    csv_label_col: disease_name
+    image_prefix: "images/"
+    label_map: {Onychomycosis: onychomycosis, beau_s: beau_s, black_line: black_line, clubbing: clubbing,
+                healthy_nail: healthy_nail, onycholysis: onycholysis, "white spot": white_spot}
+
+# Han mosaics: label = 5th '#'-separated token of the PNG name; batches containing these words and
+# mosaics with an extra sub-tag (6th token, e.g. '#fluco', '#tinea', '#spe') are skipped.
+han_mosaic:
+  skip_batch_words: [undetermined]
+  allow_subtags: [onychomycosis]      # '...#onychomycosis#onychomycosis.png' is unambiguous
+  box: 102                            # thumbnail box size (px)
+  merge_span: 106                     # merge projection runs whose union is narrower than this
+  white_level: 245
+
+# ---------------------------------------------------------------------------------------------
+# Near-duplicate detection (stages 02-04)
+dedup:
+  sscd_url: https://dl.fbaipublicfiles.com/sscd-copy-detection/sscd_disc_mixup.torchscript.pt
+  sscd_input: 288
+  batch_size: 256
+  topk: 64                          # neighbours kept per query
+  candidate_sscd: 0.45              # pairs stored for audit/calibration if sim >= this ...
+  candidate_phash: 12               # ... or pHash Hamming <= this
+  # Link settings fixed from the manual audit (150 pairs) + chaining analysis on the real candidate pairs (2026-11-05):
+  # the FPR-calibrated SSCD 0.55 with pHash <= 6 chained look-alike thumbnails into one component holding 94.6% of ko-pin
+  # (audit precision 29% above 0.55; 100% above 0.75; pHash <= 6 alone also gave a 69% component, pHash <= 2 gives 0.2%).
+  phash_link: 2                     # pHash Hamming (min over 8 dihedral variants) that links two images
+  sscd_link: 0.75                   # null -> use FPR-calibrated threshold from data/dedup/threshold.json (too permissive here)
+  sscd_link_bounds: [0.55, 0.85]    # calibrated threshold is clipped to this range
+  calib_n_pos: 600                  # synthetic Roboflow-style copies
+  calib_n_neg: 20000                # random cross-class pairs
+  calib_max_fpr: 0.001
+  audit_per_band: 25                # pairs per similarity band in the optional manual audit montage
+
+# ---------------------------------------------------------------------------------------------
+# Development-set curation (stage 04)
+curation:
+  # dev components linked to these sources are removed so that Han A1 stays hospital-disjoint
+  dev_exclude_if_linked_to: [han_A2]
+  dev_exclude_stem_regex: ["L-NAIL-5nailA2"]
+  # label policy for dev components linked to upstream images with a conflicting label
+  label_policy:
+    - {dev_class: beau_s, source: nikhilgurav21, raw_label: pitting, action: exclude}
+    - {dev_class: black_line, source: kaggle17, raw_label: "splinter hemmorrage", action: exclude}
+    - {dev_class: white_spot, source: kaggle17, raw_label: "aloperia areata", action: exclude}
+    - {dev_class: black_line, source: nikhilgurav21, raw_label: Acral_Lentiginous_Melanoma, action: flag,
+       tag: melanoma_sourced}
+
+# ---------------------------------------------------------------------------------------------
+# Splits (stage 05)
+splits:
+  n_folds: 5
+  n_repeats: 3
+  leaky_fractions: [0.70, 0.15, 0.15]
+  leaky_seed: 42
+
+# ---------------------------------------------------------------------------------------------
+# Multi-source protocol "msrc" (stages 05-07): ko-pin has no verifiable source, so pooled models are also trained on the
+# other datasets and tested leave-one-source-group-out, plus on a clean ko-pin set.
+# Evidence of published use per source: research_notes/dataset_usage_in_literature.md
+multisource:
+  literature: {han_A1: peer_reviewed, han_A2: peer_reviewed, han_BCDE: peer_reviewed, han_virtualE: weak,
+               arthitaya: peer_reviewed, arthitaya2: peer_reviewed, nuttida: peer_reviewed,
+               josephrasanjana: weak, nikhilgurav21: peer_reviewed, kaggle17: peer_reviewed,
+               farisfaikar: none, isratjahanmitu: none, legacy2272: derived, kopin: none}
+  pool_evidence: [peer_reviewed]      # only sources with these evidence levels are used for training; the rest are evaluation-only
+  # hold-out groups = sources with a shared origin/hospital; run j holds out group j (last run holds out nothing)
+  groups:
+    han: [han_A1, han_A2, han_BCDE]
+    thai: [arthitaya, arthitaya2, nuttida]
+    nikhilgurav21: [nikhilgurav21]
+    kaggle17: [kaggle17]
+  val_fraction: 0.1                   # of pool components (stratified by class), one representative image each
+
+# Cross-dataset matrix "xsrc" (stages 05-07, 13): train on each dataset alone, test every model on every other dataset.
+# A training dataset is split by near-duplicate component into train / val / own-test; every other source is evaluated with
+# all components touching the training dataset removed. Sources with one class (farisfaikar, isratjahanmitu) and the
+# derived legacy2272 set are test targets only.
+crosssource:
+  n_repeats: 1                        # independent component splits + seeds per training dataset (raise for seed variance)
+  test_fraction: 0.2
+  val_fraction: 0.1
+  min_images: 150
+  min_classes: 2
+  train_sets:                         # name -> member sources (one shared origin = one training dataset)
+    kopin: [kopin]
+    han: [han_A1, han_A2, han_BCDE]
+    han_virtualE: [han_virtualE]
+    thai: [arthitaya, arthitaya2, nuttida]
+    nikhilgurav21: [nikhilgurav21]
+    kaggle17: [kaggle17]
+    josephrasanjana: [josephrasanjana]
+
+# ---------------------------------------------------------------------------------------------
+# Models and training (stage 06)
+models:
+  vgg16:            {timm: vgg16.tv_in1k,                               size: 224, lr: 5.0e-5, wd: 1.0e-4, label: "VGG-16"}
+  densenet121:      {timm: densenet121.tv_in1k,                         size: 224, lr: 1.0e-4, wd: 1.0e-4, label: "DenseNet-121"}
+  efficientnet_b2:  {timm: efficientnet_b2.ra_in1k,                     size: 256, lr: 2.0e-4, wd: 1.0e-5, label: "EfficientNet-B2"}
+  mobilenetv3:      {timm: mobilenetv3_large_100.ra_in1k,               size: 224, lr: 3.0e-4, wd: 1.0e-5, label: "MobileNetV3-Large"}
+  vit_b16:          {timm: vit_base_patch16_224.augreg2_in21k_ft_in1k,  size: 224, lr: 5.0e-5, wd: 0.05,   label: "ViT-B/16"}
+
+train:
+  batch_size: 64
+  head_lr_mult: 10
+  max_epochs: 40
+  min_epochs: 5
+  patience: 6
+  warmup_epochs: 1
+  samples_per_epoch_factor: 4       # samples per epoch = factor x number of training components ...
+  max_steps_per_epoch: 200          # ... capped (only binds for the multi-source pools with ~20k components; cv/leaky are below it)
+  label_smoothing: 0.1
+  grad_clip: 1.0
+  amp_dtype: bfloat16
+  num_workers: 8
+  deterministic: true
+  keep_checkpoints: all             # all | r0f0 | none   (all = every trained model, ~1 GB per model set; see scripts/infer.py)
+  augment:
+    rrc_scale: [0.7, 1.0]
+    rrc_ratio: [0.85, 1.18]
+    hflip: 0.5
+    vflip: 0.5
+    rot90: true
+    color_jitter: [0.2, 0.2, 0.15, 0.02]
+  degrade_size: 100                 # resolution control: internal test downscaled to ~Han A1 thumbnail size
+
+# ---------------------------------------------------------------------------------------------
+# Analysis (stages 07-12)
+analysis:
+  bootstrap: 2000
+  ece_bins: 15
+  equivalence_margin: 0.02          # |delta macro-F1| below this is reported as practically equivalent
+  sna:
+    edge_thresholds: [0.0, 0.01]
+    pagerank_alpha: 0.85
+    louvain_resolution: 1.0
+    bootstrap: 1000
+  xai:
+    n_correct_per_class: 30
+    n_incorrect_per_class: 15
+    lime_samples: 1000
+    lime_quickshift: {kernel_size: 4, max_dist: 200, ratio: 0.2}
+    lime_num_features: 10
+    ig_steps: 64
+    ig_internal_batch: 32
+    deletion_steps: 20
+    sanity_n_per_class: 5
+    # figure gallery for choosing paper figures: one stand-alone high-resolution panel per image and model
+    gallery:
+      per_class_correct: 12         # per model and class: best-ranked correctly classified test images
+      per_class_incorrect: 8        # ... and misclassified ones (as many as exist)
+      min_side_px: 200              # prefer images whose original is at least this large (Han thumbnails are ~100 px)
+      dpi: 300
+  bench:
+    warmup: 50
+    iters_b1: 300
+    iters_b32: 100
+    repeats: 5
+    cpu_threads: [1, 4, 0]          # 0 = all physical cores
+    cpu_iters: 100
+    cpu_warmup: 10
